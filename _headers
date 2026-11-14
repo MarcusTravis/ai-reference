@@ -1,0 +1,8 @@
+# Apex aitoolchart.net is the canonical address.
+# www should redirect to the apex (set later in Cloudflare DNS / Pages).
+# aitoolchart.pages.dev can stay up; it just points search engines at the .net copy.
+/*
+  Link: <https://aitoolchart.net/:splat>; rel="canonical"
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN

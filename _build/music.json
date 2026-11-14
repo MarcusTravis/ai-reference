@@ -1,0 +1,180 @@
+[
+  {
+    "name": "Suno",
+    "maker": "Suno",
+    "knownFor": "The best-known consumer AI song generator, with a free plan plus Pro and Premier paid plans.",
+    "tags": [
+      "Consumer app",
+      "Paid plan"
+    ],
+    "price": null,
+    "pop": 5,
+    "sourced": false,
+    "popCaption": "Editorial estimate · checked Nov 2026. Suno is the most widely discussed consumer music generator in this set; no public visit-share table was found.",
+    "learn": "Full songs from a prompt",
+    "pro": "The default consumer song product in this category",
+    "con": "Official dollar amount was not captured this session, so the band is an estimate",
+    "url": "https://suno.com",
+    "cost": 1,
+    "costSourced": false,
+    "costCaption": "Official suno.com/pricing (checked Nov 2026) lists Free, Pro (labeled most popular), and Premier, with commercial rights on paid plans and a 20% annual discount described on suno.com. A public dollar figure was not captured from that page this session (prices appear to load in page script). Editorial estimate $ for the typical Pro plan. Confirm the current price on suno.com/pricing.",
+    "icon": "suno",
+    "iconOfficial": true
+  },
+  {
+    "name": "Udio",
+    "maker": "Udio",
+    "knownFor": "A consumer song generator, often mentioned alongside Suno, with a free tier and paid plans.",
+    "tags": [
+      "Consumer app",
+      "Paid plan"
+    ],
+    "price": null,
+    "pop": 4,
+    "sourced": false,
+    "popCaption": "Editorial estimate · checked Nov 2026.",
+    "learn": "An alternative to Suno for full songs",
+    "pro": "A well-known dedicated song product",
+    "con": "Official price was not captured this session",
+    "url": "https://www.udio.com",
+    "cost": 1,
+    "costSourced": false,
+    "costCaption": "Udio sells paid plans, but this session did not capture a current official monthly figure. Editorial estimate $ for a typical individual plan. Confirm current prices on udio.com.",
+    "icon": "udio",
+    "iconOfficial": true
+  },
+  {
+    "name": "Stable Audio",
+    "maker": "Stability AI",
+    "knownFor": "Stability AI’s music and sound-effect generator, with a web app and a usage-based API.",
+    "tags": [
+      "Consumer app",
+      "API",
+      "Paid plan"
+    ],
+    "price": null,
+    "pop": 3,
+    "sourced": false,
+    "popCaption": "Editorial estimate · checked Nov 2026.",
+    "learn": "Instrumental tracks and sound effects",
+    "pro": "From the same lab as Stable Diffusion, with an official audio product",
+    "con": "Official price was not captured this session",
+    "url": "https://stability.ai/stable-audio",
+    "cost": 2,
+    "costSourced": false,
+    "costCaption": "Stable Audio is sold as a web app and API. This session did not capture a current official individual monthly figure. Editorial estimate $$ for a typical individual plan or light credit spend. Confirm current prices on stability.ai.",
+    "icon": "stable-audio",
+    "iconOfficial": true
+  },
+  {
+    "name": "Google Lyria / MusicFX",
+    "maker": "Google",
+    "knownFor": "Google’s music-generation models (Lyria) and MusicFX / Flow Music features, sold through Google AI plans.",
+    "tags": [
+      "Consumer app",
+      "Paid plan"
+    ],
+    "price": null,
+    "pop": 3.5,
+    "sourced": false,
+    "popCaption": "Editorial estimate, with distribution through Google AI plans (not a music-specific traffic figure) · checked Nov 2026",
+    "learn": "Music inside a Google AI plan",
+    "pro": "Published as part of an official Google plan with a clear price",
+    "con": "Not a dedicated music studio; credits and features vary by plan",
+    "url": "https://one.google.com/about/google-ai-plans/",
+    "cost": 1,
+    "costSourced": true,
+    "costCaption": "Included with Google AI plans. Official one.google.com/about/google-ai-plans (checked Nov 2026) lists music access (Lyria / Flow Music) on Google AI Plus at $4.99/month and higher plans with more credits. Rated on Plus, the cheapest individual paid plan that advertises music generation.",
+    "icon": "lyria",
+    "iconOfficial": true
+  },
+  {
+    "name": "Eleven Music",
+    "maker": "ElevenLabs",
+    "knownFor": "Music generation inside the ElevenLabs product, billed on the same credit plans as its voice tools.",
+    "tags": [
+      "Consumer app",
+      "API",
+      "Paid plan"
+    ],
+    "price": null,
+    "pop": 3,
+    "sourced": false,
+    "popCaption": "Editorial estimate, as part of ElevenLabs’ broader audio product · checked Nov 2026",
+    "learn": "Music next to ElevenLabs voices",
+    "pro": "One subscription covers voice and music credits",
+    "con": "Not a dedicated song studio in the Suno sense",
+    "url": "https://elevenlabs.io",
+    "cost": 2,
+    "costSourced": true,
+    "costCaption": "Billed on ElevenLabs plans. Official elevenlabs.io/pricing (checked Nov 2026) lists Creator at $22/month (popular) and Starter at $6/month, with music listed among Creative features. Rated on Creator.",
+    "icon": "eleven-music",
+    "iconOfficial": true
+  },
+  {
+    "name": "AIVA",
+    "maker": "AIVA",
+    "knownFor": "A longer-running AI composition tool aimed at scores, soundtracks, and licensed music.",
+    "tags": [
+      "Consumer app",
+      "Paid plan"
+    ],
+    "price": null,
+    "pop": 2.5,
+    "sourced": false,
+    "popCaption": "Editorial estimate · checked Nov 2026.",
+    "learn": "Scores and soundtrack-style composition",
+    "pro": "Aimed at composition rather than a two-minute pop song",
+    "con": "Official price was not captured this session",
+    "url": "https://www.aiva.ai",
+    "cost": 2,
+    "costSourced": false,
+    "costCaption": "AIVA sells individual paid plans. This session did not capture a current official monthly figure. Editorial estimate $$ for a typical individual plan. Confirm current prices on aiva.ai.",
+    "icon": "aiva",
+    "iconOfficial": true
+  },
+  {
+    "name": "Soundraw",
+    "maker": "Soundraw",
+    "knownFor": "A prompt- and slider-based instrumental generator aimed at creators who need background music they can license.",
+    "tags": [
+      "Consumer app",
+      "Paid plan"
+    ],
+    "price": null,
+    "pop": 2.5,
+    "sourced": false,
+    "popCaption": "Editorial estimate · checked Nov 2026.",
+    "learn": "Licensable background music",
+    "pro": "Built around creator licensing rather than a fun song app",
+    "con": "Official price was not captured this session",
+    "url": "https://soundraw.io",
+    "cost": 2,
+    "costSourced": false,
+    "costCaption": "Soundraw sells individual paid plans. This session did not capture a current official monthly figure. Editorial estimate $$ for a typical individual plan. Confirm current prices on soundraw.io/pricing.",
+    "icon": "soundraw",
+    "iconOfficial": true
+  },
+  {
+    "name": "Beatoven",
+    "maker": "Beatoven.ai",
+    "knownFor": "A royalty-free music generator for videos, podcasts, and ads, with stem and mood controls.",
+    "tags": [
+      "Consumer app",
+      "Paid plan"
+    ],
+    "price": null,
+    "pop": 2,
+    "sourced": false,
+    "popCaption": "Editorial estimate · checked Nov 2026.",
+    "learn": "Royalty-free music for videos",
+    "pro": "A focused creator tool",
+    "con": "Official price was not captured this session",
+    "url": "https://www.beatoven.ai",
+    "cost": 2,
+    "costSourced": false,
+    "costCaption": "Beatoven sells individual paid plans. This session did not capture a current official monthly figure. Editorial estimate $$ for a typical individual plan. Confirm current prices on beatoven.ai.",
+    "icon": "beatoven",
+    "iconOfficial": true
+  }
+]

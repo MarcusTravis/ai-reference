@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Image generation · AI Reference Library</title>
+<meta name="description" content="Text-to-image tools and models, from Midjourney and ChatGPT Images to Flux, Firefly, and Ideogram.">
+<link rel="canonical" href="https://aitoolchart.net/image">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI Reference Library">
+<meta property="og:title" content="Image generation · AI Reference Library">
+<meta property="og:description" content="Text-to-image tools and models, from Midjourney and ChatGPT Images to Flux, Firefly, and Ideogram.">
+<meta property="og:url" content="https://aitoolchart.net/image">
+<meta property="og:image" content="https://aitoolchart.net/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="AI Reference Library: a dark grid and connected nodes">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Image generation · AI Reference Library">
+<meta name="twitter:description" content="Text-to-image tools and models, from Midjourney and ChatGPT Images to Flux, Firefly, and Ideogram.">
+<meta name="twitter:image" content="https://aitoolchart.net/og-image.png">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="theme.css?v=20261114">
+</head>
+<body>
+<div class="page-bg"></div>
+<a class="skip" href="#main">Skip to content</a>
+<nav class="topnav" aria-label="Primary">
+  <div class="inner">
+    <a class="brand" href="index.html">
+      <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true">
+        <rect x="1" y="1" width="26" height="26" rx="4" fill="none" stroke="#c4a6ff" stroke-width="1"/>
+        <circle cx="8" cy="18" r="2" fill="#c4a6ff"/>
+        <circle cx="14" cy="10" r="2" fill="#c4a6ff"/>
+        <circle cx="20" cy="15" r="2" fill="#c4a6ff"/>
+        <path d="M8 18 L14 10 L20 15" fill="none" stroke="#c4a6ff" stroke-width="1.2"/>
+      </svg>
+      AI Reference Library
+    </a>
+    <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="chatbots.html">Chatbots</a></li><li><a href="image.html" aria-current="page">Image</a></li><li><a href="video.html">Video</a></li><li><a href="voice.html">Voice</a></li><li><a href="music.html">Music</a></li><li><a href="coding.html">Coding</a></li><li><a href="transcription.html">Transcripts</a></li><li><a href="search.html">Search</a></li><li><a href="agents.html">Agents</a></li><li><a href="gen3d.html">3D</a></li><li><a href="updates.html">Updates</a></li></ul>
+  </div>
+</nav>
+<div class="wrap chart-wrap" id="main">
+<header class="hero">
+  <div class="hero-art"><svg class="hero-svg" viewBox="0 0 1200 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#12081c"/>
+      <stop offset="55%" stop-color="#0c0814"/>
+      <stop offset="100%" stop-color="#07060d"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#c4a6ff" stop-opacity="0.0"/>
+      <stop offset="100%" stop-color="#c4a6ff" stop-opacity="0.35"/>
+    </linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="1.4"/></filter>
+  </defs>
+  <rect width="1200" height="420" fill="url(#sky)"/>
+  <g stroke="#c4a6ff" stroke-opacity="0.16" fill="none" stroke-width="1">
+    <path d="M-40,390 L1240,390"/>
+    <path d="M0,350 L1200,350" stroke-opacity="0.14"/>
+    <path d="M40,310 L1160,310" stroke-opacity="0.12"/>
+    <path d="M80,270 L1120,270" stroke-opacity="0.10"/>
+    <path d="M120,230 L1080,230" stroke-opacity="0.08"/>
+    <path d="M200,80 L40,420" stroke-opacity="0.10"/>
+    <path d="M520,40 L200,420" stroke-opacity="0.11"/>
+    <path d="M800,20 L520,420" stroke-opacity="0.12"/>
+    <path d="M1080,40 L840,420" stroke-opacity="0.11"/>
+    <path d="M1280,80 L1120,420" stroke-opacity="0.10"/>
+  </g>
+  <g fill="none" stroke="#c4a6ff" stroke-opacity="0.45" stroke-width="1.2">
+    <path d="M140,260 L280,150 L430,220 L580,110 L740,200 L900,90 L1040,180 L1140,130"/>
+    <path d="M280,150 L300,300 L430,220 L520,330 L740,200 L820,320 L1040,180" stroke-opacity="0.28"/>
+  </g>
+  <g fill="#c4a6ff" filter="url(#soft)">
+    <circle cx="140" cy="260" r="5"/>
+    <circle cx="280" cy="150" r="7"/>
+    <circle cx="430" cy="220" r="5"/>
+    <circle cx="580" cy="110" r="8"/>
+    <circle cx="740" cy="200" r="6"/>
+    <circle cx="900" cy="90" r="7"/>
+    <circle cx="1040" cy="180" r="6"/>
+    <circle cx="1140" cy="130" r="5"/>
+    <circle cx="300" cy="300" r="4"/>
+    <circle cx="520" cy="330" r="5"/>
+    <circle cx="820" cy="320" r="4"/>
+  </g>
+  <rect x="0" y="250" width="1200" height="170" fill="url(#glow)" opacity="0.22"/>
+</svg>
+</div>
+  <div class="hero-copy">
+    <span class="eyebrow">Independent AI tools guide</span>
+    <h1>Image generation</h1>
+    <p class="lede">The tools people use to generate still images from a prompt: Midjourney, ChatGPT Images, Ideogram, Flux, Firefly, and related models.</p>
+    <p class="checked">Data last checked: <time datetime="2026-11-14">Nov 14, 2026</time> · <a href="updates.html">What changed</a></p>
+  </div>
+</header>
+  <div id="catalog">
+  <div class="toolbar">
+    <div class="chips" role="group" aria-label="Filter"><button class="chip" data-f="all" aria-pressed="true">All</button>
+<button class="chip" data-f="Consumer app" aria-pressed="false">Consumer app</button>
+<button class="chip" data-f="Paid plan" aria-pressed="false">Paid plan</button>
+<button class="chip" data-f="Discord" aria-pressed="false">Discord</button>
+<button class="chip" data-f="Creative Cloud" aria-pressed="false">Creative Cloud</button>
+<button class="chip" data-f="API" aria-pressed="false">API</button>
+<button class="chip" data-f="Open weights" aria-pressed="false">Open weights</button>
+<button class="chip" data-f="Vector" aria-pressed="false">Vector</button>
+<button class="chip" data-f="Office" aria-pressed="false">Office</button>
+<button class="chip" data-f="Free tier" aria-pressed="false">Free tier</button></div>
+    <label class="search">Search
+      <input type="search" id="search" placeholder="Name, maker, or tag" autocomplete="off">
+    </label>
+    <label class="sort">Sort
+      <select id="sort">
+        <option value="pop">Popularity</option>
+        <option value="name">Name</option>
+        <option value="cost-asc">Cost: cheapest first</option>
+        <option value="cost-desc">Cost: priciest first</option>
+      </select>
+    </label>
+  </div>
+  <p class="count" id="count"></p>
+  <div class="table-box">
+    <table class="chart">
+      <thead>
+        <tr>
+          <th><button type="button" class="th-btn" data-k="name">Tool</button></th>
+          <th>Known for</th>
+          <th><button type="button" class="th-btn" data-k="pop">Popularity</button></th>
+          <th><button type="button" class="th-btn" data-k="cost">Cost</button></th>
+          <th class="learn-th">Best for<span class="th-note">editorial rating</span></th>
+          <th>Pros &amp; cons</th>
+          <th>Official site</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </div>
+  </div>
+  <div class="notes">
+    <section>
+      <h2>How the ratings work</h2>
+      <ul>
+<li><strong>Popularity</strong> is a 1–5 judgment (halves allowed) of how commonly a product shows up in recent traffic reports, app ranks, or usage leaderboards — relative to the other products on this page, not a computed formula.</li>
+<li><strong>Captions</strong> name the source and a “checked Nov 2026” date. If there was no usable source, the caption says “Editorial estimate.”</li>
+<li><strong>Best for</strong> is an editorial label of a typical use, not a test score.</li>
+<li><strong>Cost</strong> is a five-step scale (Free / $ / $$ / $$$ / $$$$). See “How cost is rated” for the band definitions on this page. Captions cite a source or say the rating is an estimate.</li>
+<li>Scores are relative to the other image tools on this page.</li></ul>
+    </section>
+    <section>
+      <h2>How cost is rated</h2>
+      <ul>
+        <li>Cost is rated on a typical individual paid plan, per month, when we could find a published price this session. The caption names the plan. Annual “per month” equivalents are noted when the vendor publishes them. Higher ultra tiers are mentioned in the caption but do not set the band.</li>
+        <li><strong>Free</strong> — no individual paid plan is required for the core product.</li>
+        <li><strong>$</strong> — under $15 / month.</li>
+        <li><strong>$$</strong> — $15–29 / month.</li>
+        <li><strong>$$$</strong> — $30–99 / month.</li>
+        <li><strong>$$$$</strong> — $100+ / month, or quote-only with no public individual plan found this session.</li>
+        <li>If the product is mainly a usage-based API, or no public individual price turned up, the caption says so and the band is an editorial estimate — never an invented dollar amount. Always confirm current pricing with the vendor.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Sources and limits</h2>
+      <p>There is no single public firm-adoption survey for image generators comparable to the chatbot Similarweb set. Captions cite official products, and any traffic or usage figure we could verify. Several rows are editorial estimates.</p>
+    </section>
+    <section>
+      <h2>Independence</h2>
+      <p>This site is ad-free and has no affiliate links. Official-site buttons go straight to the vendor. Stars are not paid placement.</p>
+    </section>
+    <section>
+      <h2>About the icons</h2>
+      <p>The first column is meant to look like the product’s app or site icon. Official vendor or App Store app icons are used when we could find one this session. If not, the tile is a generated initials icon in the same rounded-square style.</p>
+    </section>
+  </div>
+</div>
+<footer class="site-footer">
+<p class="kofi">Free and ad-free. If this site helped you, <a href="https://ko-fi.com/marcustravis" target="_blank" rel="noopener">buy me a coffee →</a></p>
+</footer>
+
+<script src="app.js?v=20261114"></script>
+<script src="scroll-hint.js?v=20261114"></script>
+<script>
+const DATA = [{"id": "p-midjourney", "name": "Midjourney", "maker": "Midjourney", "knownFor": "A prompt-to-image (and now video) service, still one of the best-known independent image products.", "tags": ["Consumer app", "Paid plan", "Discord"], "price": null, "pop": 4.5, "popCaption": "Editorial estimate · checked Nov 2026. Midjourney remains one of the most widely discussed dedicated image products, but this session did not find a comparable public visit-share table for image tools.", "cost": 1, "costCaption": "Official midjourney.com/pricing (checked Nov 2026): Basic $10/month ($8/month billed yearly), Standard $30/month ($24 yearly), Pro $60/month ($48 yearly), Mega $120/month ($96 yearly). Rated on Basic, the cheapest individual paid plan.", "learn": "Dedicated image (and video) generation", "pro": "Clear official price ladder and a long-standing dedicated user base", "con": "Popularity here is editorial; there is no Similarweb-style share table on this page", "url": "https://www.midjourney.com", "icon": "midjourney", "iconOfficial": true}, {"id": "p-chatgpt-images", "name": "ChatGPT Images", "maker": "OpenAI", "knownFor": "Image generation and editing inside ChatGPT, billed as part of a ChatGPT plan rather than a standalone seat.", "tags": ["Consumer app", "Paid plan"], "price": null, "pop": 5, "popCaption": "Rides ChatGPT’s leading website-visit share (55.7% in October 2026, Similarweb). This is not a separate product-traffic figure · checked Nov 2026", "cost": 2, "costCaption": "Included with ChatGPT plans. Rated on ChatGPT Plus at $20/month (OpenAI Help, checked Nov 2026). Image tools are also described on chatgpt.com/pricing (Plus and Pro). API image use is billed separately.", "learn": "Images without leaving ChatGPT", "pro": "Distribution through the largest assistant website in the Similarweb set", "con": "Not a standalone product; quality and limits follow the ChatGPT plan", "url": "https://chatgpt.com", "icon": "chatgpt-images", "iconOfficial": true}, {"id": "p-gemini-images", "name": "Gemini Images", "maker": "Google", "knownFor": "Image generation and editing in the Gemini app and Google Search (including Nano Banana / Imagen-family models).", "tags": ["Consumer app", "Paid plan"], "price": null, "pop": 4, "popCaption": "Rides Gemini’s second-place website-visit share (24.2% in October 2026, Similarweb). This is not a separate image-product traffic figure · checked Nov 2026", "cost": 2, "costCaption": "Included with Google AI plans. Rated on Google AI Pro at $19.99/month (one.google.com, checked Nov 2026). Google AI Plus at $4.99/month also advertises more access to image generation than the free tier.", "learn": "Images inside Gemini and Search", "pro": "Huge built-in distribution in Google products", "con": "Not a standalone image studio; limits depend on the Google AI plan", "url": "https://gemini.google.com", "icon": "gemini-images", "iconOfficial": true}, {"id": "p-adobe-firefly", "name": "Adobe Firefly", "maker": "Adobe", "knownFor": "Adobe’s generative image (and now video) tools, built into Firefly’s own app and into Photoshop, Express, and other Creative Cloud apps.", "tags": ["Consumer app", "Paid plan", "Creative Cloud"], "price": null, "pop": 4, "popCaption": "Editorial estimate · checked Nov 2026. Firefly’s distribution inside Creative Cloud is the reason for the score; this session did not find a standalone public visit-share figure.", "cost": 3, "costCaption": "Firefly is sold through Adobe plans (Firefly, Express, and Creative Cloud). This session did not capture a single clean official individual monthly figure from Adobe’s pricing pages. Editorial estimate $$$ for a typical paid Creative Cloud or Firefly individual plan. Confirm current list prices on adobe.com.", "learn": "People already paying for Photoshop", "pro": "Sits inside tools many designers already use, with commercial-use framing from Adobe", "con": "No official individual price was captured this session, so the cost band is an estimate", "url": "https://www.adobe.com/products/firefly.html", "icon": "firefly", "iconOfficial": true}, {"id": "p-flux", "name": "Flux", "maker": "Black Forest Labs", "knownFor": "An image model family from Black Forest Labs, used through the official Flux app and many API hosts.", "tags": ["API", "Consumer app", "Open weights"], "price": null, "pop": 4, "popCaption": "Editorial estimate · checked Nov 2026. Flux is widely used as a model behind other apps and APIs; this session did not find a single official consumer-traffic figure.", "cost": 2, "costCaption": "Flux is sold as a model and through official and third-party apps; pricing is often usage-based. This session did not capture a single official individual monthly plan. Editorial estimate $$ for a typical light individual spend. Confirm current prices on blackforestlabs.ai or the host you use.", "learn": "Developers and power users who want Flux itself", "pro": "A widely adopted image model family, including open-weight variants", "con": "Usage-based and multi-host pricing does not map cleanly to one monthly seat", "url": "https://blackforestlabs.ai", "icon": "flux", "iconOfficial": true}, {"id": "p-ideogram", "name": "Ideogram", "maker": "Ideogram", "knownFor": "An image generator known for unusually reliable text rendering in images.", "tags": ["Consumer app", "Paid plan"], "price": null, "pop": 3, "popCaption": "Editorial estimate · checked Nov 2026. No comparable public visit-share figure was found this session.", "cost": 2, "costCaption": "Ideogram sells paid plans, but ideogram.ai/pricing was not readable this session (the request was blocked). Editorial estimate $$ for a typical individual plan. Confirm current prices on ideogram.ai.", "learn": "Posters and images that must include words", "pro": "Strong reputation for rendering letters and logos in images", "con": "Official price was not captured this session", "url": "https://ideogram.ai", "icon": "ideogram", "iconOfficial": true}, {"id": "p-leonardo", "name": "Leonardo", "maker": "Leonardo.Ai", "knownFor": "A web studio for image generation with presets, training, and a production-oriented workflow.", "tags": ["Consumer app", "Paid plan"], "price": null, "pop": 3, "popCaption": "Editorial estimate · checked Nov 2026. No comparable public visit-share figure was found this session.", "cost": 2, "costCaption": "Leonardo sells paid plans, but leonardo.ai/pricing was not readable this session (the request was blocked). Editorial estimate $$ for a typical individual plan. Confirm current prices on leonardo.ai.", "learn": "A full in-browser image studio", "pro": "A dedicated workspace rather than a single chat box", "con": "Official price was not captured this session", "url": "https://leonardo.ai", "icon": "leonardo", "iconOfficial": true}, {"id": "p-recraft", "name": "Recraft", "maker": "Recraft", "knownFor": "An image and vector tool aimed at brand-consistent design work, including SVG output.", "tags": ["Consumer app", "Paid plan", "Vector"], "price": null, "pop": 3, "popCaption": "Editorial estimate · checked Nov 2026.", "cost": 2, "costCaption": "Recraft sells individual paid plans, but this session did not capture a current official monthly figure from the vendor’s pricing page. Editorial estimate $$ for a typical individual plan. Confirm current prices on recraft.ai.", "learn": "Brand-consistent images and vectors", "pro": "Vector and brand-kit features that many art generators lack", "con": "Official price was not captured this session", "url": "https://www.recraft.ai", "icon": "recraft", "iconOfficial": true}, {"id": "p-grok-imagine", "name": "Grok Imagine", "maker": "xAI", "knownFor": "Image (and short video) generation inside Grok, sold through the X Subscription.", "tags": ["Consumer app", "Paid plan"], "price": null, "pop": 3, "popCaption": "Tied to Grok’s 2.2% share of seven tracked assistant websites in October 2026 (Similarweb). This is not a separate Imagine-product traffic figure · checked Nov 2026", "cost": 3, "costCaption": "Included with the X Subscription. Rated on Premium at $30/month, the plan marked most popular on x.ai/pricing (checked Nov 2026). Plus at $8/month also lists Imagine. A free tier with limited generation is described on x.ai/grok.", "learn": "Images inside a Grok chat", "pro": "Bundled with a live-search assistant, so you do not need a second app", "con": "Website-visit share for Grok is still small; this is not a dedicated image studio", "url": "https://x.ai/grok", "icon": "grok-imagine", "iconOfficial": true}, {"id": "p-dreamstudio", "name": "DreamStudio", "maker": "Stability AI", "knownFor": "Stability AI’s official web app for Stable Diffusion family models.", "tags": ["Consumer app", "API", "Open weights"], "price": null, "pop": 3, "popCaption": "Editorial estimate · checked Nov 2026. The open Stable Diffusion family is widely used; DreamStudio itself is only one front end.", "cost": 2, "costCaption": "DreamStudio and the Stability API are usage-based (credits). This session did not capture a current official individual monthly price. Editorial estimate $$ for a typical light individual credit spend. Confirm current prices on stability.ai.", "learn": "Official access to Stability’s models", "pro": "Sits next to a very widely used open-model family", "con": "Credit pricing does not map to one seat, and the front-end app is not the whole ecosystem", "url": "https://stability.ai", "icon": "dreamstudio", "iconOfficial": true}, {"id": "p-microsoft-designer", "name": "Microsoft Designer", "maker": "Microsoft", "knownFor": "A design and image app in the Microsoft 365 / Copilot family, aimed at social posts and simple layouts.", "tags": ["Consumer app", "Paid plan", "Office"], "price": null, "pop": 3, "popCaption": "Editorial estimate · checked Nov 2026. Designer rides Microsoft 365 distribution; no standalone public visit-share figure was found.", "cost": 2, "costCaption": "Designer is included with Microsoft 365 plans. Rated on Microsoft 365 Premium at $19.99/month (microsoft.com/en-us/copilot/pricing/individuals, checked Nov 2026) when used as part of that bundle. A more limited free or web experience may also exist — confirm on designer.microsoft.com.", "learn": "Simple layouts in a Microsoft 365 subscription", "pro": "Easy if you already pay for Microsoft 365", "con": "Not a specialist image model playground", "url": "https://designer.microsoft.com", "icon": "designer", "iconOfficial": true}, {"id": "p-seaart", "name": "SeaArt", "maker": "SeaArt", "knownFor": "A high-volume consumer image community and generator, with many model presets.", "tags": ["Consumer app", "Free tier", "Paid plan"], "price": null, "pop": 3, "popCaption": "Editorial estimate · checked Nov 2026. Community traffic is often cited anecdotally; no official share figure was found this session.", "cost": 1, "costCaption": "SeaArt offers a free tier and paid credit or membership plans. This session did not capture a current official individual monthly figure. Editorial estimate $ for a typical low-cost individual plan. Confirm current prices on seaart.ai.", "learn": "High-volume community image generation", "pro": "A large library of community models and presets", "con": "Official price and a cited traffic figure were not captured this session", "url": "https://www.seaart.ai", "icon": "seaart", "iconOfficial": true}];
+initCatalog(DATA, { noun: "image tools", defaultSort: "pop", extraCols: [] });
+</script>
+</body>
+</html>

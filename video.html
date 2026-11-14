@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Video generation · AI Reference Library</title>
+<meta name="description" content="Text-to-video and image-to-video tools, including Runway, Kling, Luma, Sora, and Veo.">
+<link rel="canonical" href="https://aitoolchart.net/video">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI Reference Library">
+<meta property="og:title" content="Video generation · AI Reference Library">
+<meta property="og:description" content="Text-to-video and image-to-video tools, including Runway, Kling, Luma, Sora, and Veo.">
+<meta property="og:url" content="https://aitoolchart.net/video">
+<meta property="og:image" content="https://aitoolchart.net/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="AI Reference Library: a dark grid and connected nodes">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Video generation · AI Reference Library">
+<meta name="twitter:description" content="Text-to-video and image-to-video tools, including Runway, Kling, Luma, Sora, and Veo.">
+<meta name="twitter:image" content="https://aitoolchart.net/og-image.png">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="theme.css?v=20261114">
+</head>
+<body>
+<div class="page-bg"></div>
+<a class="skip" href="#main">Skip to content</a>
+<nav class="topnav" aria-label="Primary">
+  <div class="inner">
+    <a class="brand" href="index.html">
+      <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true">
+        <rect x="1" y="1" width="26" height="26" rx="4" fill="none" stroke="#c4a6ff" stroke-width="1"/>
+        <circle cx="8" cy="18" r="2" fill="#c4a6ff"/>
+        <circle cx="14" cy="10" r="2" fill="#c4a6ff"/>
+        <circle cx="20" cy="15" r="2" fill="#c4a6ff"/>
+        <path d="M8 18 L14 10 L20 15" fill="none" stroke="#c4a6ff" stroke-width="1.2"/>
+      </svg>
+      AI Reference Library
+    </a>
+    <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="chatbots.html">Chatbots</a></li><li><a href="image.html">Image</a></li><li><a href="video.html" aria-current="page">Video</a></li><li><a href="voice.html">Voice</a></li><li><a href="music.html">Music</a></li><li><a href="coding.html">Coding</a></li><li><a href="transcription.html">Transcripts</a></li><li><a href="search.html">Search</a></li><li><a href="agents.html">Agents</a></li><li><a href="gen3d.html">3D</a></li><li><a href="updates.html">Updates</a></li></ul>
+  </div>
+</nav>
+<div class="wrap chart-wrap" id="main">
+<header class="hero">
+  <div class="hero-art"><svg class="hero-svg" viewBox="0 0 1200 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#12081c"/>
+      <stop offset="55%" stop-color="#0c0814"/>
+      <stop offset="100%" stop-color="#07060d"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#c4a6ff" stop-opacity="0.0"/>
+      <stop offset="100%" stop-color="#c4a6ff" stop-opacity="0.35"/>
+    </linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="1.4"/></filter>
+  </defs>
+  <rect width="1200" height="420" fill="url(#sky)"/>
+  <g stroke="#c4a6ff" stroke-opacity="0.16" fill="none" stroke-width="1">
+    <path d="M-40,390 L1240,390"/>
+    <path d="M0,350 L1200,350" stroke-opacity="0.14"/>
+    <path d="M40,310 L1160,310" stroke-opacity="0.12"/>
+    <path d="M80,270 L1120,270" stroke-opacity="0.10"/>
+    <path d="M120,230 L1080,230" stroke-opacity="0.08"/>
+    <path d="M200,80 L40,420" stroke-opacity="0.10"/>
+    <path d="M520,40 L200,420" stroke-opacity="0.11"/>
+    <path d="M800,20 L520,420" stroke-opacity="0.12"/>
+    <path d="M1080,40 L840,420" stroke-opacity="0.11"/>
+    <path d="M1280,80 L1120,420" stroke-opacity="0.10"/>
+  </g>
+  <g fill="none" stroke="#c4a6ff" stroke-opacity="0.45" stroke-width="1.2">
+    <path d="M140,260 L280,150 L430,220 L580,110 L740,200 L900,90 L1040,180 L1140,130"/>
+    <path d="M280,150 L300,300 L430,220 L520,330 L740,200 L820,320 L1040,180" stroke-opacity="0.28"/>
+  </g>
+  <g fill="#c4a6ff" filter="url(#soft)">
+    <circle cx="140" cy="260" r="5"/>
+    <circle cx="280" cy="150" r="7"/>
+    <circle cx="430" cy="220" r="5"/>
+    <circle cx="580" cy="110" r="8"/>
+    <circle cx="740" cy="200" r="6"/>
+    <circle cx="900" cy="90" r="7"/>
+    <circle cx="1040" cy="180" r="6"/>
+    <circle cx="1140" cy="130" r="5"/>
+    <circle cx="300" cy="300" r="4"/>
+    <circle cx="520" cy="330" r="5"/>
+    <circle cx="820" cy="320" r="4"/>
+  </g>
+  <rect x="0" y="250" width="1200" height="170" fill="url(#glow)" opacity="0.22"/>
+</svg>
+</div>
+  <div class="hero-copy">
+    <span class="eyebrow">Independent AI tools guide</span>
+    <h1>Video generation</h1>
+    <p class="lede">Text-to-video and image-to-video tools in wide use: Runway, Pika, Kling, Luma, Sora, Google Veo, and their peers.</p>
+    <p class="checked">Data last checked: <time datetime="2026-11-14">Nov 14, 2026</time> · <a href="updates.html">What changed</a></p>
+  </div>
+</header>
+  <div id="catalog">
+  <div class="toolbar">
+    <div class="chips" role="group" aria-label="Filter"><button class="chip" data-f="all" aria-pressed="true">All</button>
+<button class="chip" data-f="Consumer app" aria-pressed="false">Consumer app</button>
+<button class="chip" data-f="Paid plan" aria-pressed="false">Paid plan</button>
+<button class="chip" data-f="Creative Cloud" aria-pressed="false">Creative Cloud</button>
+<button class="chip" data-f="Avatars" aria-pressed="false">Avatars</button></div>
+    <label class="search">Search
+      <input type="search" id="search" placeholder="Name, maker, or tag" autocomplete="off">
+    </label>
+    <label class="sort">Sort
+      <select id="sort">
+        <option value="pop">Popularity</option>
+        <option value="name">Name</option>
+        <option value="cost-asc">Cost: cheapest first</option>
+        <option value="cost-desc">Cost: priciest first</option>
+      </select>
+    </label>
+  </div>
+  <p class="count" id="count"></p>
+  <div class="table-box">
+    <table class="chart">
+      <thead>
+        <tr>
+          <th><button type="button" class="th-btn" data-k="name">Tool</button></th>
+          <th>Known for</th>
+          <th><button type="button" class="th-btn" data-k="pop">Popularity</button></th>
+          <th><button type="button" class="th-btn" data-k="cost">Cost</button></th>
+          <th class="learn-th">Best for<span class="th-note">editorial rating</span></th>
+          <th>Pros &amp; cons</th>
+          <th>Official site</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </div>
+  </div>
+  <div class="notes">
+    <section>
+      <h2>How the ratings work</h2>
+      <ul>
+<li><strong>Popularity</strong> is a 1–5 judgment (halves allowed) of how commonly a product shows up in recent traffic reports, app ranks, or usage leaderboards — relative to the other products on this page, not a computed formula.</li>
+<li><strong>Captions</strong> name the source and a “checked Nov 2026” date. If there was no usable source, the caption says “Editorial estimate.”</li>
+<li><strong>Best for</strong> is an editorial label of a typical use, not a test score.</li>
+<li><strong>Cost</strong> is a five-step scale (Free / $ / $$ / $$$ / $$$$). See “How cost is rated” for the band definitions on this page. Captions cite a source or say the rating is an estimate.</li>
+<li>Scores are relative to the other video tools on this page.</li></ul>
+    </section>
+    <section>
+      <h2>How cost is rated</h2>
+      <ul>
+        <li>Cost is rated on a typical individual paid plan, per month, when we could find a published price this session. The caption names the plan. Annual “per month” equivalents are noted when the vendor publishes them. Higher ultra tiers are mentioned in the caption but do not set the band.</li>
+        <li><strong>Free</strong> — no individual paid plan is required for the core product.</li>
+        <li><strong>$</strong> — under $15 / month.</li>
+        <li><strong>$$</strong> — $15–29 / month.</li>
+        <li><strong>$$$</strong> — $30–99 / month.</li>
+        <li><strong>$$$$</strong> — $100+ / month, or quote-only with no public individual plan found this session.</li>
+        <li>If the product is mainly a usage-based API, or no public individual price turned up, the caption says so and the band is an editorial estimate — never an invented dollar amount. Always confirm current pricing with the vendor.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Sources and limits</h2>
+      <p>Public, product-level usage rankings for video generators are thin. Captions cite official pricing or products, and any usage figure we could verify. Several popularity scores are editorial estimates.</p>
+    </section>
+    <section>
+      <h2>Independence</h2>
+      <p>This site is ad-free and has no affiliate links. Official-site buttons go straight to the vendor. Stars are not paid placement.</p>
+    </section>
+    <section>
+      <h2>About the icons</h2>
+      <p>The first column is meant to look like the product’s app or site icon. Official vendor or App Store app icons are used when we could find one this session. If not, the tile is a generated initials icon in the same rounded-square style.</p>
+    </section>
+  </div>
+</div>
+<footer class="site-footer">
+<p class="kofi">Free and ad-free. If this site helped you, <a href="https://ko-fi.com/marcustravis" target="_blank" rel="noopener">buy me a coffee →</a></p>
+</footer>
+
+<script src="app.js?v=20261114"></script>
+<script src="scroll-hint.js?v=20261114"></script>
+<script>
+const DATA = [{"id": "p-runway", "name": "Runway", "maker": "Runway", "knownFor": "A dedicated AI video studio, with Gen-series models and a public individual price ladder.", "tags": ["Consumer app", "Paid plan"], "price": null, "pop": 4, "popCaption": "Editorial estimate · checked Nov 2026. Runway is one of the longest-running dedicated AI video products; no public visit-share table was found this session.", "cost": 2, "costCaption": "Official runwayml.com/pricing (checked Nov 2026): Standard $15/month or $12/month billed annually; Pro $35/month or $28/month billed annually (labeled popular); Max $95/month or $76/month billed annually. A free plan with one-time credits is also listed. Rated on Standard, the cheapest ongoing individual plan.", "learn": "A dedicated video studio", "pro": "Clear official prices and a long-standing product", "con": "Popularity is editorial; credit packs can add to the monthly seat", "url": "https://runwayml.com", "icon": "runway", "iconOfficial": true}, {"id": "p-google-veo", "name": "Google Veo", "maker": "Google", "knownFor": "Google’s video models, offered through Gemini, Google Flow, and related Google AI plans.", "tags": ["Consumer app", "Paid plan"], "price": null, "pop": 4, "popCaption": "Editorial estimate, with distribution through Gemini and Google AI plans (Gemini had 24.2% of seven-assistant website visits in October 2026, Similarweb — that is not a Veo-specific figure) · checked Nov 2026", "cost": 2, "costCaption": "Veo / Flow access is sold through Google AI plans. Official one.google.com/about/google-ai-plans (checked Nov 2026) lists Google AI Plus $4.99/month (200 Flow credits), Google AI Pro $19.99/month (1,000 Flow credits), and Ultra at $99.99 or $199.99/month with much higher credits. Rated on Google AI Pro, a typical individual paid plan for serious video use. Usage is credit-based inside the plan.", "learn": "Video inside Google’s AI plans", "pro": "Distribution through Gemini and Flow, with published credit amounts", "con": "Not a standalone video brand; limits depend on the Google plan and credits", "url": "https://gemini.google.com", "icon": "veo", "iconOfficial": true}, {"id": "p-sora", "name": "Sora", "maker": "OpenAI", "knownFor": "OpenAI’s video generator, offered through ChatGPT and related OpenAI products.", "tags": ["Consumer app", "Paid plan"], "price": null, "pop": 4, "popCaption": "Editorial estimate, with distribution through ChatGPT (55.7% of seven-assistant website visits in October 2026, Similarweb — that is not a Sora-specific figure) · checked Nov 2026", "cost": 2, "costCaption": "Sora access is tied to ChatGPT paid plans. Rated on ChatGPT Plus at $20/month (OpenAI Help, checked Nov 2026). Higher Pro tiers ($100–$500/month) advertise more image and video capacity. Confirm current Sora eligibility on chatgpt.com/pricing, because access can differ by plan and region.", "learn": "Video inside ChatGPT", "pro": "Built into the most-visited assistant website in the Similarweb set", "con": "Access and limits vary by plan; this is not a dedicated video editor", "url": "https://chatgpt.com", "icon": "sora", "iconOfficial": true}, {"id": "p-kling", "name": "Kling", "maker": "Kuaishou", "knownFor": "A high-profile text-to-video and image-to-video model and app from Kuaishou, widely used for short clips.", "tags": ["Consumer app", "Paid plan"], "price": null, "pop": 4, "popCaption": "Editorial estimate · checked Nov 2026. Kling is widely discussed as a leading video model, but this session did not find a public visit-share figure.", "cost": 2, "costCaption": "Kling sells credit- or membership-based plans on official Kling sites. This session did not capture a current official individual monthly figure. Editorial estimate $$ for a typical individual plan. Confirm current prices on the official Kling site you use (region-specific domains).", "learn": "Short cinematic clips", "pro": "A frequently cited high-quality video model", "con": "Official price and a cited traffic figure were not captured this session", "url": "https://klingai.com", "icon": "kling", "iconOfficial": true}, {"id": "p-luma-dream-machine", "name": "Luma Dream Machine", "maker": "Luma AI", "knownFor": "Luma’s video generator (Dream Machine), known for accessible web-based text-to-video and image-to-video.", "tags": ["Consumer app", "Paid plan"], "price": null, "pop": 3.5, "popCaption": "Editorial estimate · checked Nov 2026.", "cost": 2, "costCaption": "Luma sells paid Dream Machine plans, but this session did not capture a current official individual monthly figure. Editorial estimate $$ for a typical individual plan. Confirm current prices on lumalabs.ai.", "learn": "Quick web-based video generation", "pro": "A well-known dedicated video product", "con": "Official price was not captured this session", "url": "https://lumalabs.ai/dream-machine", "icon": "luma", "iconOfficial": true}, {"id": "p-pika", "name": "Pika", "maker": "Pika", "knownFor": "An approachable web and Discord video generator aimed at short social clips and effects.", "tags": ["Consumer app", "Paid plan"], "price": null, "pop": 3.5, "popCaption": "Editorial estimate · checked Nov 2026.", "cost": 2, "costCaption": "Pika sells paid plans, but this session did not capture a current official individual monthly figure. Editorial estimate $$ for a typical individual plan. Confirm current prices on pika.art.", "learn": "Short social video and effects", "pro": "Simple product aimed at short clips", "con": "Official price was not captured this session", "url": "https://pika.art", "icon": "pika", "iconOfficial": true}, {"id": "p-hailuo", "name": "Hailuo", "maker": "MiniMax", "knownFor": "MiniMax’s Hailuo video generator, a widely discussed Chinese text-to-video product.", "tags": ["Consumer app", "Paid plan"], "price": null, "pop": 3, "popCaption": "Editorial estimate · checked Nov 2026. MiniMax models also appear on OpenRouter, which is an API signal, not a video-app traffic figure.", "cost": 2, "costCaption": "Hailuo sells credit- or membership-based access. This session did not capture a current official individual monthly figure. Editorial estimate $$ for a typical individual plan. Confirm current prices on the official Hailuo / MiniMax site.", "learn": "Budget-friendly video clips", "pro": "Frequently mentioned alongside Kling and other leading video models", "con": "Official price was not captured this session", "url": "https://hailuoai.video", "icon": "hailuo", "iconOfficial": true}, {"id": "p-adobe-firefly-video", "name": "Adobe Firefly Video", "maker": "Adobe", "knownFor": "Video generation inside Adobe Firefly and Creative Cloud, aimed at people already in Adobe’s apps.", "tags": ["Consumer app", "Paid plan", "Creative Cloud"], "price": null, "pop": 3, "popCaption": "Editorial estimate · checked Nov 2026.", "cost": 3, "costCaption": "Sold through Adobe Firefly and Creative Cloud plans. This session did not capture a single official individual monthly figure. Editorial estimate $$$ for a typical paid Adobe plan that includes Firefly video. Confirm current prices on adobe.com.", "learn": "Video for Creative Cloud users", "pro": "Lives where many editors already work", "con": "Official individual price was not captured this session", "url": "https://www.adobe.com/products/firefly.html", "icon": "firefly-video", "iconOfficial": true}, {"id": "p-heygen", "name": "HeyGen", "maker": "HeyGen", "knownFor": "A talking-head and avatar video product, used for explainers, localization, and business presentations.", "tags": ["Consumer app", "Paid plan", "Avatars"], "price": null, "pop": 3, "popCaption": "Editorial estimate · checked Nov 2026.", "cost": 3, "costCaption": "HeyGen sells individual and business plans. This session did not capture a current official individual monthly figure. Editorial estimate $$$ for a typical individual creator plan. Confirm current prices on heygen.com/pricing.", "learn": "Presenter and avatar videos", "pro": "A clear job (talking-head video) that general text-to-video tools do not fully replace", "con": "Official price was not captured this session", "url": "https://www.heygen.com", "icon": "heygen", "iconOfficial": true}, {"id": "p-vidu", "name": "Vidu", "maker": "ShengShu / Vidu", "knownFor": "A text-to-video and image-to-video app, including the Vidu consumer product.", "tags": ["Consumer app", "Paid plan"], "price": null, "pop": 2.5, "popCaption": "Editorial estimate · checked Nov 2026.", "cost": 2, "costCaption": "Vidu sells paid plans or credits. This session did not capture a current official individual monthly figure. Editorial estimate $$ for a typical individual plan. Confirm current prices on vidu.com.", "learn": "Another consumer video alternative", "pro": "A dedicated video app outside the US lab set", "con": "Official price and a cited traffic figure were not captured this session", "url": "https://www.vidu.com", "icon": "vidu", "iconOfficial": true}];
+initCatalog(DATA, { noun: "video tools", defaultSort: "pop", extraCols: [] });
+</script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Coding assistants · AI Reference Library</title>
+<meta name="description" content="AI coding editors, plugins, and command-line agents, from Cursor and GitHub Copilot to Claude Code and Cline.">
+<link rel="canonical" href="https://aitoolchart.net/coding">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI Reference Library">
+<meta property="og:title" content="Coding assistants · AI Reference Library">
+<meta property="og:description" content="AI coding editors, plugins, and command-line agents, from Cursor and GitHub Copilot to Claude Code and Cline.">
+<meta property="og:url" content="https://aitoolchart.net/coding">
+<meta property="og:image" content="https://aitoolchart.net/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="AI Reference Library: a dark grid and connected nodes">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Coding assistants · AI Reference Library">
+<meta name="twitter:description" content="AI coding editors, plugins, and command-line agents, from Cursor and GitHub Copilot to Claude Code and Cline.">
+<meta name="twitter:image" content="https://aitoolchart.net/og-image.png">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="theme.css?v=20261114">
+</head>
+<body>
+<div class="page-bg"></div>
+<a class="skip" href="#main">Skip to content</a>
+<nav class="topnav" aria-label="Primary">
+  <div class="inner">
+    <a class="brand" href="index.html">
+      <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true">
+        <rect x="1" y="1" width="26" height="26" rx="4" fill="none" stroke="#c4a6ff" stroke-width="1"/>
+        <circle cx="8" cy="18" r="2" fill="#c4a6ff"/>
+        <circle cx="14" cy="10" r="2" fill="#c4a6ff"/>
+        <circle cx="20" cy="15" r="2" fill="#c4a6ff"/>
+        <path d="M8 18 L14 10 L20 15" fill="none" stroke="#c4a6ff" stroke-width="1.2"/>
+      </svg>
+      AI Reference Library
+    </a>
+    <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="chatbots.html">Chatbots</a></li><li><a href="image.html">Image</a></li><li><a href="video.html">Video</a></li><li><a href="voice.html">Voice</a></li><li><a href="music.html">Music</a></li><li><a href="coding.html" aria-current="page">Coding</a></li><li><a href="transcription.html">Transcripts</a></li><li><a href="search.html">Search</a></li><li><a href="agents.html">Agents</a></li><li><a href="gen3d.html">3D</a></li><li><a href="updates.html">Updates</a></li></ul>
+  </div>
+</nav>
+<div class="wrap chart-wrap" id="main">
+<header class="hero">
+  <div class="hero-art"><svg class="hero-svg" viewBox="0 0 1200 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#12081c"/>
+      <stop offset="55%" stop-color="#0c0814"/>
+      <stop offset="100%" stop-color="#07060d"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#c4a6ff" stop-opacity="0.0"/>
+      <stop offset="100%" stop-color="#c4a6ff" stop-opacity="0.35"/>
+    </linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="1.4"/></filter>
+  </defs>
+  <rect width="1200" height="420" fill="url(#sky)"/>
+  <g stroke="#c4a6ff" stroke-opacity="0.16" fill="none" stroke-width="1">
+    <path d="M-40,390 L1240,390"/>
+    <path d="M0,350 L1200,350" stroke-opacity="0.14"/>
+    <path d="M40,310 L1160,310" stroke-opacity="0.12"/>
+    <path d="M80,270 L1120,270" stroke-opacity="0.10"/>
+    <path d="M120,230 L1080,230" stroke-opacity="0.08"/>
+    <path d="M200,80 L40,420" stroke-opacity="0.10"/>
+    <path d="M520,40 L200,420" stroke-opacity="0.11"/>
+    <path d="M800,20 L520,420" stroke-opacity="0.12"/>
+    <path d="M1080,40 L840,420" stroke-opacity="0.11"/>
+    <path d="M1280,80 L1120,420" stroke-opacity="0.10"/>
+  </g>
+  <g fill="none" stroke="#c4a6ff" stroke-opacity="0.45" stroke-width="1.2">
+    <path d="M140,260 L280,150 L430,220 L580,110 L740,200 L900,90 L1040,180 L1140,130"/>
+    <path d="M280,150 L300,300 L430,220 L520,330 L740,200 L820,320 L1040,180" stroke-opacity="0.28"/>
+  </g>
+  <g fill="#c4a6ff" filter="url(#soft)">
+    <circle cx="140" cy="260" r="5"/>
+    <circle cx="280" cy="150" r="7"/>
+    <circle cx="430" cy="220" r="5"/>
+    <circle cx="580" cy="110" r="8"/>
+    <circle cx="740" cy="200" r="6"/>
+    <circle cx="900" cy="90" r="7"/>
+    <circle cx="1040" cy="180" r="6"/>
+    <circle cx="1140" cy="130" r="5"/>
+    <circle cx="300" cy="300" r="4"/>
+    <circle cx="520" cy="330" r="5"/>
+    <circle cx="820" cy="320" r="4"/>
+  </g>
+  <rect x="0" y="250" width="1200" height="170" fill="url(#glow)" opacity="0.22"/>
+</svg>
+</div>
+  <div class="hero-copy">
+    <span class="eyebrow">Independent AI tools guide</span>
+    <h1>Coding assistants</h1>
+    <p class="lede">The assistants people use to write and edit code: Cursor, GitHub Copilot, Claude Code, Windsurf, Codex, and open tools like Cline and Aider.</p>
+    <p class="checked">Data last checked: <time datetime="2026-11-14">Nov 14, 2026</time> · <a href="updates.html">What changed</a></p>
+  </div>
+</header>
+  <div id="catalog">
+  <div class="toolbar">
+    <div class="chips" role="group" aria-label="Filter"><button class="chip" data-f="all" aria-pressed="true">All</button>
+<button class="chip" data-f="Editor" aria-pressed="false">Editor</button>
+<button class="chip" data-f="Paid plan" aria-pressed="false">Paid plan</button>
+<button class="chip" data-f="Agents" aria-pressed="false">Agents</button>
+<button class="chip" data-f="Editor plugin" aria-pressed="false">Editor plugin</button>
+<button class="chip" data-f="CLI" aria-pressed="false">CLI</button>
+<button class="chip" data-f="Agent" aria-pressed="false">Agent</button>
+<button class="chip" data-f="Cloud" aria-pressed="false">Cloud</button>
+<button class="chip" data-f="Open source" aria-pressed="false">Open source</button></div>
+    <label class="search">Search
+      <input type="search" id="search" placeholder="Name, maker, or tag" autocomplete="off">
+    </label>
+    <label class="sort">Sort
+      <select id="sort">
+        <option value="pop">Popularity</option>
+        <option value="name">Name</option>
+        <option value="cost-asc">Cost: cheapest first</option>
+        <option value="cost-desc">Cost: priciest first</option>
+      </select>
+    </label>
+  </div>
+  <p class="count" id="count"></p>
+  <div class="table-box">
+    <table class="chart">
+      <thead>
+        <tr>
+          <th><button type="button" class="th-btn" data-k="name">Tool</button></th>
+          <th>Known for</th>
+          <th><button type="button" class="th-btn" data-k="pop">Popularity</button></th>
+          <th><button type="button" class="th-btn" data-k="cost">Cost</button></th>
+          <th class="learn-th">Best for<span class="th-note">editorial rating</span></th>
+          <th>Pros &amp; cons</th>
+          <th>Official site</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </div>
+  </div>
+  <div class="notes">
+    <section>
+      <h2>How the ratings work</h2>
+      <ul>
+<li><strong>Popularity</strong> is a 1–5 judgment (halves allowed) of how commonly a product shows up in recent traffic reports, app ranks, or usage leaderboards — relative to the other products on this page, not a computed formula.</li>
+<li><strong>Captions</strong> name the source and a “checked Nov 2026” date. If there was no usable source, the caption says “Editorial estimate.”</li>
+<li><strong>Best for</strong> is an editorial label of a typical use, not a test score.</li>
+<li><strong>Cost</strong> is a five-step scale (Free / $ / $$ / $$$ / $$$$). See “How cost is rated” for the band definitions on this page. Captions cite a source or say the rating is an estimate.</li>
+<li>Scores are relative to the other coding assistants on this page.</li></ul>
+    </section>
+    <section>
+      <h2>How cost is rated</h2>
+      <ul>
+        <li>Cost is rated on a typical individual paid plan, per month, when we could find a published price this session. The caption names the plan. Annual “per month” equivalents are noted when the vendor publishes them. Higher ultra tiers are mentioned in the caption but do not set the band.</li>
+        <li><strong>Free</strong> — no individual paid plan is required for the core product.</li>
+        <li><strong>$</strong> — under $15 / month.</li>
+        <li><strong>$$</strong> — $15–29 / month.</li>
+        <li><strong>$$$</strong> — $30–99 / month.</li>
+        <li><strong>$$$$</strong> — $100+ / month, or quote-only with no public individual plan found this session.</li>
+        <li>If the product is mainly a usage-based API, or no public individual price turned up, the caption says so and the band is an editorial estimate — never an invented dollar amount. Always confirm current pricing with the vendor.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Sources and limits</h2>
+      <p>Open-source tools cite GitHub star counts (checked November 2026). Commercial tools do not have one public usage table; their stars are a relative judgment with whatever source we could cite. Cursor’s public pricing now sits on the same X Subscription ladder as Grok.</p>
+    </section>
+    <section>
+      <h2>Independence</h2>
+      <p>This site is ad-free and has no affiliate links. Official-site buttons go straight to the vendor. Stars are not paid placement.</p>
+    </section>
+    <section>
+      <h2>About the icons</h2>
+      <p>The first column is meant to look like the product’s app or site icon. Official vendor or App Store app icons are used when we could find one this session. If not, the tile is a generated initials icon in the same rounded-square style.</p>
+    </section>
+  </div>
+</div>
+<footer class="site-footer">
+<p class="kofi">Free and ad-free. If this site helped you, <a href="https://ko-fi.com/marcustravis" target="_blank" rel="noopener">buy me a coffee →</a></p>
+</footer>
+
+<script src="app.js?v=20261114"></script>
+<script src="scroll-hint.js?v=20261114"></script>
+<script>
+const DATA = [{"id": "p-cursor", "name": "Cursor", "maker": "Anysphere / X Subscription", "knownFor": "An AI-first code editor. Public pricing is now the X Subscription ladder, shared with Grok, with third-party models billed separately on higher plans.", "tags": ["Editor", "Paid plan", "Agents"], "price": null, "pop": 5, "popCaption": "Editorial estimate · checked Nov 2026. Cursor is the most widely discussed dedicated AI editor in this set; there is no public seat-count table in this research pass.", "cost": 3, "costCaption": "Official cursor.com/pricing (checked Nov 2026), matching x.ai/pricing: Free; Plus $8/month (Grok models only); Premium $30/month (labeled most popular; third-party models at API list price); Super $100/month; Ultra $200/month. Teams start at $30+/user/month. Rated on Premium, the plan the page marks as most popular for serious use.", "learn": "An AI-first desktop editor", "pro": "A dedicated coding product with a published price ladder", "con": "Plus is Grok-only; third-party model spend is extra on Premium and above", "url": "https://cursor.com", "icon": "cursor", "iconOfficial": true}, {"id": "p-github-copilot", "name": "GitHub Copilot", "maker": "GitHub (Microsoft)", "knownFor": "The default in-editor assistant for many GitHub users, available as an extension, in github.com, and as a CLI.", "tags": ["Editor plugin", "Paid plan", "CLI"], "price": null, "pop": 5, "popCaption": "Editorial estimate · checked Nov 2026. Copilot’s distribution inside GitHub and VS Code is the reason for the score; no public seat-count was found this session.", "cost": 1, "costCaption": "Official GitHub Docs, “Plans for GitHub Copilot” (docs.github.com, checked Nov 2026): Copilot Pro $10/month (free for some users); Copilot Pro+ $39/month; Copilot Max $100/month; Copilot Business $19/user/month; Copilot Enterprise $39/user/month. Rated on Copilot Pro, the typical individual paid plan.", "learn": "Completion and chat inside an existing editor", "pro": "Clear official individual price and huge distribution through GitHub and VS Code", "con": "Popularity is editorial (no public seat-count); higher plans add a lot of cost", "url": "https://github.com/features/copilot", "icon": "github-copilot", "iconOfficial": true}, {"id": "p-claude-code", "name": "Claude Code", "maker": "Anthropic", "knownFor": "Anthropic’s coding agent (terminal, IDE, and related surfaces), included with paid Claude plans rather than sold as a separate seat.", "tags": ["CLI", "Agent", "Paid plan"], "price": null, "pop": 4.5, "popCaption": "Editorial estimate, tied to Claude’s rising web traffic (11.5% of seven-assistant website visits in October 2026, Similarweb — that is not a Claude Code-specific figure) · checked Nov 2026", "cost": 2, "costCaption": "Included with Claude paid plans. Official claude.com/pricing (checked Nov 2026) lists Claude Pro at $20/month ($17/month billed annually) and includes Claude Code. Max is $100/month and Ultra is $200/month. Rated on Pro. API coding use is separate except for credits on higher plans.", "learn": "An agent in the terminal or IDE", "pro": "Bundled with a clearly priced Claude plan", "con": "Usage is shared with the rest of the Claude plan; heavy coding can hit limits", "url": "https://claude.com", "icon": "claude-code", "iconOfficial": true}, {"id": "p-openai-codex", "name": "OpenAI Codex", "maker": "OpenAI", "knownFor": "OpenAI’s coding agent, available in ChatGPT, a CLI, IDE extensions, and related Cloud/work surfaces.", "tags": ["CLI", "Editor plugin", "Agent", "Paid plan"], "price": null, "pop": 4, "popCaption": "Editorial estimate, with distribution through ChatGPT (55.7% of seven-assistant website visits in October 2026, Similarweb — not a Codex-specific figure) · checked Nov 2026", "cost": 2, "costCaption": "Codex access is described on ChatGPT plans. Rated on ChatGPT Plus at $20/month (OpenAI Help, checked Nov 2026). chatgpt.com/pricing and OpenAI Help also describe expanded Codex usage on Plus and Pro. API-key usage is billed separately at API rates.", "learn": "A coding agent next to ChatGPT", "pro": "Bundled with the most-visited assistant in the Similarweb set", "con": "Limits and surfaces vary by plan; this is not only an in-editor extension", "url": "https://chatgpt.com", "icon": "codex", "iconOfficial": true}, {"id": "p-windsurf", "name": "Windsurf", "maker": "Windsurf (Cognition)", "knownFor": "An AI-first editor (the Windsurf / Codeium line) with a straightforward individual Pro plan.", "tags": ["Editor", "Paid plan", "Agents"], "price": null, "pop": 3.5, "popCaption": "Editorial estimate · checked Nov 2026.", "cost": 2, "costCaption": "Official windsurf.com/pricing (checked Nov 2026): Free; Pro $20/month (labeled popular); Max $200/month. Teams are $80/month for the team plan plus $40/month per full dev seat. Rated on Pro.", "learn": "An alternative AI-first editor", "pro": "A clear official $20 individual plan", "con": "Smaller public footprint than Cursor or GitHub Copilot in this research pass", "url": "https://windsurf.com", "icon": "windsurf", "iconOfficial": true}, {"id": "p-gemini-code-assist", "name": "Gemini Code Assist", "maker": "Google", "knownFor": "Google’s coding assistant, available in IDEs, Android Studio, and Google’s AI developer tools, including higher usage on paid Google AI plans.", "tags": ["Editor plugin", "Paid plan"], "price": null, "pop": 3.5, "popCaption": "Editorial estimate, with distribution through Google’s developer tools and AI plans · checked Nov 2026", "cost": 2, "costCaption": "Tied to Google AI and Google Cloud / developer plans. Official one.google.com/about/google-ai-plans (checked Nov 2026) describes AI-assisted coding features and Cloud credits on Google AI paid plans. Rated on Google AI Pro at $19.99/month as a typical individual paid path. Some features also sit on Cloud or Workspace plans — confirm on Google’s current Code Assist page.", "learn": "Completion and agents in a Google toolchain", "pro": "Sits next to Android Studio, Cloud, and Gemini", "con": "The exact seat can be a Google AI plan or a Cloud/Workspace SKU, depending on the surface", "url": "https://codeassist.google", "icon": "gemini-code", "iconOfficial": true}, {"id": "p-amazon-q-developer", "name": "Amazon Q Developer", "maker": "Amazon Web Services", "knownFor": "AWS’s coding assistant, aimed at people already building on Amazon Web Services.", "tags": ["Editor plugin", "Paid plan", "Cloud"], "price": null, "pop": 3, "popCaption": "Editorial estimate · checked Nov 2026.", "cost": 2, "costCaption": "Amazon Q Developer is sold as a free tier plus a paid individual or Professional plan on AWS. This session did not capture a current official individual monthly figure from the AWS pricing page. Editorial estimate $$ for a typical individual paid plan. Confirm current prices on aws.amazon.com/q/developer/pricing.", "learn": "Coding inside an AWS shop", "pro": "Natural fit if the team is already on AWS", "con": "Official individual price was not captured this session", "url": "https://aws.amazon.com/q/developer/", "icon": "amazon-q", "iconOfficial": true}, {"id": "p-tabnine", "name": "Tabnine", "maker": "Tabnine", "knownFor": "A long-running completion assistant, including options aimed at privacy-conscious and enterprise teams.", "tags": ["Editor plugin", "Paid plan"], "price": null, "pop": 3, "popCaption": "Editorial estimate · checked Nov 2026.", "cost": 2, "costCaption": "Tabnine sells individual and team plans. This session did not capture a current official individual monthly figure. Editorial estimate $$ for a typical individual plan. Confirm current prices on tabnine.com/pricing.", "learn": "Completions with a privacy-conscious pitch", "pro": "A dedicated coding product older than the current editor wave", "con": "Official price was not captured this session", "url": "https://www.tabnine.com", "icon": "tabnine", "iconOfficial": true}, {"id": "p-jetbrains-ai", "name": "JetBrains AI", "maker": "JetBrains", "knownFor": "The AI assistant built into JetBrains IDEs (IntelliJ, PyCharm, and others), sold as a JetBrains AI subscription or as part of a JetBrains plan.", "tags": ["Editor plugin", "Paid plan"], "price": null, "pop": 3.5, "popCaption": "Editorial estimate, based on JetBrains’ large existing IDE user base rather than a public AI-seat count · checked Nov 2026", "cost": 2, "costCaption": "JetBrains AI is sold as an add-on or as part of a JetBrains subscription. This session did not capture a current official individual monthly figure. Editorial estimate $$ for a typical individual AI add-on. Confirm current prices on jetbrains.com.", "learn": "People who already live in IntelliJ or PyCharm", "pro": "Native to a very widely used IDE family", "con": "Official AI-add-on price was not captured this session", "url": "https://www.jetbrains.com/ai/", "icon": "jetbrains-ai", "iconOfficial": true}, {"id": "p-cline", "name": "Cline", "maker": "Cline", "knownFor": "An open-source coding agent (VS Code and similar), often used with your own model API keys.", "tags": ["Editor plugin", "Agent", "Open source"], "price": null, "pop": 3.5, "popCaption": "71,633 GitHub stars on cline/cline (GitHub API, checked Nov 14, 2026). Stars measure interest, not paid seats.", "cost": 0, "costCaption": "The Cline project is free and open source. You pay separately for whatever model API you connect. Rated Free for the tool itself; model spend is usage-based and not invented here.", "learn": "An open agent in VS Code", "pro": "A large, cited open-source footprint", "con": "Your real cost is the model API, which varies widely", "url": "https://github.com/cline/cline", "icon": "cline", "iconOfficial": false}, {"id": "p-aider", "name": "Aider", "maker": "Aider", "knownFor": "An open-source, terminal-based coding agent that edits a local repo with a connected model.", "tags": ["CLI", "Agent", "Open source"], "price": null, "pop": 3, "popCaption": "50,118 GitHub stars on Aider-AI/aider (GitHub API, checked Nov 14, 2026). Stars measure interest, not paid seats.", "cost": 0, "costCaption": "Aider is free and open source. You pay separately for the model API you connect. Rated Free for the tool itself; model spend is usage-based and not invented here.", "learn": "A terminal agent over a git repo", "pro": "A well-known open CLI workflow", "con": "Your real cost is the model API, which varies widely", "url": "https://aider.chat", "icon": "aider", "iconOfficial": true}, {"id": "p-continue", "name": "Continue", "maker": "Continue", "knownFor": "An open-source IDE extension that can connect to many local or hosted models.", "tags": ["Editor plugin", "Open source"], "price": null, "pop": 3, "popCaption": "36,481 GitHub stars on continuedev/continue (GitHub API, checked Nov 14, 2026). Stars measure interest, not paid seats.", "cost": 0, "costCaption": "The Continue extension is free and open source. You pay separately for whatever model you connect, or you can use a local model. Rated Free for the tool itself.", "learn": "A bring-your-own-model IDE plugin", "pro": "Open, model-agnostic, and widely starred", "con": "The assistant is only as good as the model you attach", "url": "https://continue.dev", "icon": "continue", "iconOfficial": true}];
+initCatalog(DATA, { noun: "coding assistants", defaultSort: "pop", extraCols: [] });
+</script>
+</body>
+</html>

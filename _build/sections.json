@@ -1,0 +1,112 @@
+[
+  {
+    "file": "chatbots.html",
+    "slug": "chatbots",
+    "json": "chatbots.json",
+    "title": "LLMs and chatbots",
+    "noun": "chatbots",
+    "description": "Consumer and API chat assistants, from ChatGPT and Claude to DeepSeek, Grok, and open-weight labs.",
+    "lede": "The chat apps and assistants people actually open: ChatGPT, Claude, Gemini, Grok, Copilot, DeepSeek, and their peers. One row per product, not every model version.",
+    "relative": "How popular a chatbot looks here is relative to the other assistants on this page, not a universal score. Website-visit shares under-count tools that live mainly inside an app or an office suite.",
+    "limits": "Primary web-traffic source: Similarweb estimates of visits to generative AI assistant websites in October 2026 (ChatGPT 55.7%, Gemini 24.2%, Claude 11.5%, DeepSeek 3.4%, Grok 2.2%, Microsoft Copilot 1.1%, Perplexity 0.8%). Those figures are website visits, not app sessions or people. OpenRouter weekly token rankings (mid-November 2026) are cited for API-side usage and do not measure consumer apps. Meta AI, Qwen, Mistral Le Chat, and Character.AI are not in that seven-site Similarweb set; their stars are editorial unless another source is named."
+  },
+  {
+    "file": "image.html",
+    "slug": "image",
+    "json": "image.json",
+    "title": "Image generation",
+    "noun": "image tools",
+    "description": "Text-to-image tools and models, from Midjourney and ChatGPT Images to Flux, Firefly, and Ideogram.",
+    "lede": "The tools people use to generate still images from a prompt: Midjourney, ChatGPT Images, Ideogram, Flux, Firefly, and related models.",
+    "relative": "Scores are relative to the other image tools on this page.",
+    "limits": "There is no single public firm-adoption survey for image generators comparable to the chatbot Similarweb set. Captions cite official products, and any traffic or usage figure we could verify. Several rows are editorial estimates."
+  },
+  {
+    "file": "video.html",
+    "slug": "video",
+    "json": "video.json",
+    "title": "Video generation",
+    "noun": "video tools",
+    "description": "Text-to-video and image-to-video tools, including Runway, Kling, Luma, Sora, and Veo.",
+    "lede": "Text-to-video and image-to-video tools in wide use: Runway, Pika, Kling, Luma, Sora, Google Veo, and their peers.",
+    "relative": "Scores are relative to the other video tools on this page.",
+    "limits": "Public, product-level usage rankings for video generators are thin. Captions cite official pricing or products, and any usage figure we could verify. Several popularity scores are editorial estimates."
+  },
+  {
+    "file": "voice.html",
+    "slug": "voice",
+    "json": "voice.json",
+    "title": "Voice, TTS, and cloning",
+    "noun": "voice tools",
+    "description": "Text-to-speech, voice cloning, and conversational voice tools, from ElevenLabs to Cartesia and Descript.",
+    "lede": "The tools people use to speak, clone, and transcribe voice: ElevenLabs, OpenAI TTS, PlayAI, Cartesia, Hume, and related products.",
+    "relative": "Scores are relative to the other voice tools on this page.",
+    "limits": "Voice tools mix consumer apps and developer APIs. Usage-based API pricing is not forced into a fake monthly total. Popularity is editorial unless a caption cites a source."
+  },
+  {
+    "file": "music.html",
+    "slug": "music",
+    "json": "music.json",
+    "title": "Music generation",
+    "noun": "music tools",
+    "description": "AI song and score generators, including Suno, Udio, Stable Audio, and Google Lyria.",
+    "lede": "Tools that turn a prompt into a song or a score: Suno, Udio, Stable Audio, Google Lyria, AIVA, and related products.",
+    "relative": "Scores are relative to the other music tools on this page.",
+    "limits": "There is no single public usage league table for music generators in this research pass. Official pricing is cited where the vendor page showed a dollar figure; Suno\u2019s official pricing page listed plan names but not a captured dollar amount this session."
+  },
+  {
+    "file": "coding.html",
+    "slug": "coding",
+    "json": "coding.json",
+    "title": "Coding assistants",
+    "noun": "coding assistants",
+    "description": "AI coding editors, plugins, and command-line agents, from Cursor and GitHub Copilot to Claude Code and Cline.",
+    "lede": "The assistants people use to write and edit code: Cursor, GitHub Copilot, Claude Code, Windsurf, Codex, and open tools like Cline and Aider.",
+    "relative": "Scores are relative to the other coding assistants on this page.",
+    "limits": "Open-source tools cite GitHub star counts (checked November 2026). Commercial tools do not have one public usage table; their stars are a relative judgment with whatever source we could cite. Cursor\u2019s public pricing now sits on the same X Subscription ladder as Grok."
+  },
+  {
+    "file": "transcription.html",
+    "slug": "transcription",
+    "json": "transcription.json",
+    "title": "Transcription and speech-to-text",
+    "noun": "transcription tools",
+    "description": "Speech-to-text APIs and meeting notetakers, including Whisper, Deepgram, Otter, Fireflies, and Fathom.",
+    "lede": "Tools that turn speech into text, including meeting notetakers: Whisper, Deepgram, AssemblyAI, Otter, Fireflies, Fathom, and related products.",
+    "relative": "Scores are relative to the other transcription tools on this page.",
+    "limits": "This page mixes developer APIs (often usage-based) and meeting apps with monthly seats. API cost bands are editorial estimates when there is no fair individual monthly plan. OpenAI Whisper\u2019s open-source repo star count is cited for the open model, which is not the same as ChatGPT\u2019s built-in voice features."
+  },
+  {
+    "file": "search.html",
+    "slug": "search",
+    "json": "search.json",
+    "title": "AI search",
+    "noun": "search tools",
+    "description": "Answer engines and AI-assisted search, including Perplexity, ChatGPT Search, Google AI Mode, and Grok.",
+    "lede": "Search and answer engines that cite the web: Perplexity, ChatGPT Search, Google AI Mode, Copilot, Grok, and related tools.",
+    "relative": "Scores are relative to the other AI search tools on this page. Several of these products also appear as chatbots; the stars here are about search use, not the parent chat app as a whole.",
+    "limits": "Perplexity\u2019s 0.8% share in Similarweb\u2019s October 2026 seven-assistant website-visit set is cited where it applies. Google AI Mode lives inside Search and is not measured by those chatbot-site shares. Several rows are editorial estimates."
+  },
+  {
+    "file": "agents.html",
+    "slug": "agents",
+    "json": "agents.json",
+    "title": "Agents and automation",
+    "noun": "agent tools",
+    "description": "Agent products and automation platforms, from ChatGPT agents and Claude computer use to Zapier, Make, and n8n.",
+    "lede": "Tools that take actions, not just answers: ChatGPT agents, Claude computer use, Zapier, Make, n8n, Lindy, Manus, and related products.",
+    "relative": "Scores are relative to the other agent and automation tools on this page.",
+    "limits": "This category mixes consumer agents, office copilots, and workflow platforms. n8n\u2019s GitHub star count is cited for the open project. Several consumer-agent popularity scores are editorial estimates because there is no shared public usage table."
+  },
+  {
+    "file": "gen3d.html",
+    "slug": "gen3d",
+    "json": "gen3d.json",
+    "title": "3D generation",
+    "noun": "3D tools",
+    "description": "Image-to-3D and text-to-3D tools, including Meshy, Tripo, Rodin, CSM, Spline, and Hunyuan3D.",
+    "lede": "Tools that turn an image or a prompt into a 3D asset: Meshy, Tripo, Rodin, CSM, Spline, Hunyuan3D, and their peers.",
+    "relative": "Scores are relative to the other 3D tools on this page.",
+    "limits": "The 3D generation field is smaller and faster-moving than chat or image tools. Most popularity scores on this page are editorial estimates. Official pricing is cited when a public individual plan was found."
+  }
+]
