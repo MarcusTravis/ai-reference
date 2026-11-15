@@ -12,6 +12,7 @@ These 128×128 PNG files are the first-column app-style icons on the section cha
 - `assemblyai.png` — Official icon for AssemblyAI. Source: https://www.assemblyai.com/favicon.ico. Checked Nov 2026.
 - `beatoven.png` — Official icon for Beatoven. Source: official favicon of www.beatoven.ai, retrieved via Google favicon service and stored locally (https://www.google.com/s2/favicons?domain=www.beatoven.ai&sz=128). Checked Nov 2026.
 - `brave-leo.png` — Official icon for Brave Search / Leo. Source: official favicon of search.brave.com, retrieved via Google favicon service and stored locally (https://www.google.com/s2/favicons?domain=search.brave.com&sz=128). Checked Nov 2026.
+- `canva.png` — Official icon for Canva Magic Studio. Source: https://static.canva.com/static/images/android-192x192.png. Checked Nov 2026.
 - `cartesia.png` — Official icon for Cartesia. Source: https://cartesia.ai/apple-touch-icon.png. Checked Nov 2026.
 - `character-ai.png` — Official icon for Character.AI. Source: https://character.ai/apple-touch-icon.png. Checked Nov 2026.
 - `chatgpt-agent.png` — Official icon for ChatGPT Agent. Source: official favicon of chatgpt.com, retrieved via Google favicon service and stored locally (https://www.google.com/s2/favicons?domain=chatgpt.com&sz=128). Checked Nov 2026.
@@ -21,11 +22,13 @@ These 128×128 PNG files are the first-column app-style icons on the section cha
 - `claude-code.png` — Official icon for Claude Code. Source: https://claude.com/apple-touch-icon.png. Checked Nov 2026.
 - `claude-computer-use.png` — Official icon for Claude Computer Use. Source: https://claude.com/apple-touch-icon.png. Checked Nov 2026.
 - `claude.png` — Official icon for Claude. Source: https://claude.com/apple-touch-icon.png. Checked Nov 2026.
+- `clickup.png` — Official icon for ClickUp Brain. Source: https://clickup.com/favicons/apple-touch-icon.png. Checked Nov 2026.
 - `codex.png` — Official icon for OpenAI Codex. Source: official favicon of chatgpt.com, retrieved via Google favicon service and stored locally (https://www.google.com/s2/favicons?domain=chatgpt.com&sz=128). Checked Nov 2026.
 - `continue.png` — Official icon for Continue. Source: official favicon of continue.dev, retrieved via Google favicon service and stored locally (https://www.google.com/s2/favicons?domain=continue.dev&sz=128). Checked Nov 2026.
 - `copilot-search.png` — Official icon for Microsoft Copilot (search). Source: https://copilot.microsoft.com/favicon.ico. Checked Nov 2026.
 - `copilot-studio.png` — Official icon for Microsoft Copilot Studio. Source: https://www.microsoft.com/apple-touch-icon.png. Checked Nov 2026.
 - `copilot.png` — Official icon for Microsoft Copilot. Source: https://copilot.microsoft.com/favicon.ico. Checked Nov 2026.
+- `copy-ai.png` — Official icon for Copy.ai. Source: official 256×256 favicon on copy.ai (https://cdn.prod.website-files.com/628288c5cd3e8411b90a36a4/6793eea6a090d6d2f4fa5570_favicon_256x256%20(2).png). Checked Nov 2026.
 - `csm.png` — Official icon for CSM. Source: official favicon of csm.ai, retrieved via Google favicon service and stored locally (https://www.google.com/s2/favicons?domain=csm.ai&sz=128). Checked Nov 2026.
 - `cursor.png` — Official icon for Cursor. Source: https://cursor.com/apple-touch-icon.png. Checked Nov 2026.
 - `deepgram.png` — Official icon for Deepgram. Source: https://deepgram.com/favicon.ico. Checked Nov 2026.
@@ -44,21 +47,27 @@ These 128×128 PNG files are the first-column app-style icons on the section cha
 - `firefly.png` — Official icon for Adobe Firefly. Source: https://www.adobe.com/favicon.ico. Checked Nov 2026.
 - `flux.png` — Official icon for Flux. Source: https://blackforestlabs.ai/favicon.ico. Checked Nov 2026.
 - `fotor.png` — Official icon for Fotor. Source: official favicon of www.fotor.com (https://static.fotor.com/web/_next/static/images/favicon-d4b8dbe4630a2bc790117e61267bbb33.png). Checked Nov 2026.
+- `gamma.png` — Official icon for Gamma. Source: https://static.gamma.app/favicons/apple-touch-icon.png. Checked Nov 2026.
 - `gemini-code.png` — Official icon for Gemini Code Assist. Source: official favicon of codeassist.google, retrieved via Google favicon service and stored locally (https://www.google.com/s2/favicons?domain=codeassist.google&sz=128). Checked Nov 2026.
 - `gemini-images.png` — Official icon for Gemini Images. Source: official favicon of gemini.google.com, retrieved via Google favicon service and stored locally (https://www.google.com/s2/favicons?domain=gemini.google.com&sz=128). Checked Nov 2026.
 - `gemini.png` — Official icon for Gemini. Source: official favicon of gemini.google.com, retrieved via Google favicon service and stored locally (https://www.google.com/s2/favicons?domain=gemini.google.com&sz=128). Checked Nov 2026.
 - `github-copilot.png` — Official icon for GitHub Copilot. Source: https://github.com/apple-touch-icon.png. Checked Nov 2026.
+- `gohighlevel.png` — Official icon for GoHighLevel (HighLevel). Source: official favicon image linked from gohighlevel.com (https://storage.googleapis.com/msgsndr/knES3eSWYIsc5YSZ3YLl/media/62b48689c85eccb36ca941fc.png). Checked Nov 2026.
 - `google-ai-mode.png` — Official icon for Google AI Mode. Source: https://www.google.com/favicon.ico. Checked Nov 2026.
 - `google-tts.png` — Official icon for Google Cloud TTS. Source: https://cloud.google.com/apple-touch-icon.png. Checked Nov 2026.
 - `grain.png` — Official icon for Grain. Source: official favicon of grain.com, retrieved via Google favicon service and stored locally (https://www.google.com/s2/favicons?domain=grain.com&sz=128). Checked Nov 2026.
+- `grammarly.png` — Official icon for Grammarly. Source: https://static-web.grammarly.com/cms/master/public/favicon.ico. Checked Nov 2026.
 - `grok-imagine.png` — Official icon for Grok Imagine. Source: https://x.ai/favicon.ico. Checked Nov 2026.
 - `grok-search.png` — Official icon for Grok (search). Source: https://x.ai/favicon.ico. Checked Nov 2026.
 - `grok.png` — Official icon for Grok. Source: https://x.ai/favicon.ico. Checked Nov 2026.
 - `hailuo.png` — Official icon for Hailuo. Source: https://hailuoai.video/favicon.ico. Checked Nov 2026.
 - `heygen.png` — Official icon for HeyGen. Source: https://www.heygen.com/favicon-32x32.png. Checked Nov 2026.
+- `hubspot.png` — Official icon for HubSpot (Breeze AI). Source: official HubSpot favicon at https://www.hubspot.com/hubfs/HubSpot_Logos/HubSpot-Inversed-Favicon.png. Checked Nov 2026.
 - `hume.png` — Official icon for Hume. Source: https://www.hume.ai/favicon.ico. Checked Nov 2026.
 - `hunyuan3d.png` — Official icon for Hunyuan3D. Source: official favicon of 3d.hunyuan.tencent.com, retrieved via Google favicon service and stored locally (https://www.google.com/s2/favicons?domain=3d.hunyuan.tencent.com&sz=128). Checked Nov 2026.
 - `ideogram.png` — Official icon for Ideogram. Source: official favicon of ideogram.ai, retrieved via Google favicon service and stored locally (https://www.google.com/s2/favicons?domain=ideogram.ai&sz=128). Checked Nov 2026.
+- `intercom-fin.png` — Official icon for Intercom Fin. Source: https://www.intercom.com/intercom-marketing-site/favicons/favicon.ico. Checked Nov 2026.
+- `jasper.png` — Official icon for Jasper. Source: official 256×256 webclip icon on jasper.ai (https://cdn.prod.website-files.com/6807ee8d73c233fb82842313/681e121f9445a06741087852_Webclip.png). Checked Nov 2026.
 - `jetbrains-ai.png` — Official icon for JetBrains AI. Source: https://www.jetbrains.com/apple-touch-icon.png. Checked Nov 2026.
 - `kimi.png` — Official icon for Kimi. Source: https://www.kimi.com/favicon.ico. Checked Nov 2026.
 - `kling.png` — Official icon for Kling. Source: https://klingai.com/favicon.ico. Checked Nov 2026.
@@ -78,6 +87,7 @@ These 128×128 PNG files are the first-column app-style icons on the section cha
 - `mistral.png` — Official icon for Mistral Le Chat. Source: official favicon of chat.mistral.ai, retrieved via Google favicon service and stored locally (https://www.google.com/s2/favicons?domain=chat.mistral.ai&sz=128). Checked Nov 2026.
 - `murf.png` — Official icon for Murf. Source: official favicon of murf.ai, retrieved via Google favicon service and stored locally (https://www.google.com/s2/favicons?domain=murf.ai&sz=128). Checked Nov 2026.
 - `n8n.png` — Official icon for n8n. Source: https://n8n.io/apple-touch-icon.png. Checked Nov 2026.
+- `notion-ai.png` — Official icon for Notion AI. Source: https://www.notion.com/front-static/logo-ios.png. Checked Nov 2026.
 - `notta.png` — Official icon for Notta. Source: https://www.notta.ai/apple-touch-icon.png. Checked Nov 2026.
 - `openai-tts.png` — Official icon for OpenAI TTS. Source: official favicon of platform.openai.com, retrieved via Google favicon service and stored locally (https://www.google.com/s2/favicons?domain=platform.openai.com&sz=128). Checked Nov 2026.
 - `otter.png` — Official icon for Otter. Source: official favicon of otter.ai, retrieved via Google favicon service and stored locally (https://www.google.com/s2/favicons?domain=otter.ai&sz=128). Checked Nov 2026.
@@ -87,6 +97,7 @@ These 128×128 PNG files are the first-column app-style icons on the section cha
 - `picsart.png` — Official icon for Picsart. Source: https://picsart.com/apple-touch-icon.png. Checked Nov 2026.
 - `pika.png` — Official icon for Pika. Source: https://pika.art/favicon.ico. Checked Nov 2026.
 - `playai.png` — Official icon for PlayAI. Source: official favicon of play.ai, retrieved via Google favicon service and stored locally (https://www.google.com/s2/favicons?domain=play.ai&sz=128). Checked Nov 2026.
+- `quillbot.png` — Official icon for QuillBot. Source: official favicon of quillbot.com, retrieved via Google favicon service and stored locally (https://www.google.com/s2/favicons?domain=quillbot.com&sz=256). The quillbot.com favicon URLs returned 403 this session. Checked Nov 2026.
 - `qwen.png` — Official icon for Qwen. Source: official favicon of chat.qwen.ai, retrieved via Google favicon service and stored locally (https://www.google.com/s2/favicons?domain=chat.qwen.ai&sz=128). Checked Nov 2026.
 - `recraft.png` — Official icon for Recraft. Source: official favicon of www.recraft.ai, retrieved via Google favicon service and stored locally (https://www.google.com/s2/favicons?domain=www.recraft.ai&sz=128). Checked Nov 2026.
 - `reface.png` — Official icon for Reface. Source: official Google Play app icon for Reface: Face Swap AI Generator (play.google.com/store/apps/details?id=video.reface.app), stored locally. Checked Nov 2026.
@@ -96,6 +107,7 @@ These 128×128 PNG files are the first-column app-style icons on the section cha
 - `rev.png` — Official icon for Rev. Source: https://www.rev.com/apple-touch-icon.png. Checked Nov 2026.
 - `rodin.png` — Official icon for Rodin. Source: https://hyper3d.ai/apple-touch-icon.png. Checked Nov 2026.
 - `runway.png` — Official icon for Runway. Source: official favicon of runwayml.com, retrieved via Google favicon service and stored locally (https://www.google.com/s2/favicons?domain=runwayml.com&sz=128). Checked Nov 2026.
+- `salesforce-agentforce.png` — Official icon for Salesforce Agentforce. Source: https://www.salesforce.com/c2/public/app/favicon.ico. Checked Nov 2026.
 - `seaart.png` — Official icon for SeaArt. Source: https://www.seaart.ai/apple-touch-icon.png. Checked Nov 2026.
 - `sora.png` — Official icon for Sora. Source: official favicon of chatgpt.com, retrieved via Google favicon service and stored locally (https://www.google.com/s2/favicons?domain=chatgpt.com&sz=128). Checked Nov 2026.
 - `soundraw.png` — Official icon for Soundraw. Source: https://soundraw.io/apple-touch-icon.png. Checked Nov 2026.
@@ -103,6 +115,7 @@ These 128×128 PNG files are the first-column app-style icons on the section cha
 - `spline.png` — Official icon for Spline AI. Source: official favicon of spline.design, retrieved via Google favicon service and stored locally (https://www.google.com/s2/favicons?domain=spline.design&sz=128). Checked Nov 2026.
 - `stable-audio.png` — Official icon for Stable Audio. Source: https://stability.ai/favicon.ico. Checked Nov 2026.
 - `suno.png` — Official icon for Suno. Source: https://suno.com/apple-touch-icon.png. Checked Nov 2026.
+- `superhuman.png` — Official icon for Superhuman. Source: official Apple touch icon on Superhuman’s static host (https://superhumanstatic.com/super-funnel/main/public/images/v4/favicons/superhuman-apple-touch-icon.png). Checked Nov 2026.
 - `tabnine.png` — Official icon for Tabnine. Source: official favicon of www.tabnine.com, retrieved via Google favicon service and stored locally (https://www.google.com/s2/favicons?domain=www.tabnine.com&sz=128). Checked Nov 2026.
 - `topaz-photo.png` — Official icon for Topaz Photo. Source: official Topaz Labs icon on topazlabs.com (https://cdn.prod.website-files.com/6005fac27a49a9cd477afb63/66207d48d19641ced6ae4796_tnb-favicon-256.png). Checked Nov 2026.
 - `tripo.png` — Official icon for Tripo. Source: https://www.tripo3d.ai/favicon.ico. Checked Nov 2026.
@@ -114,6 +127,7 @@ These 128×128 PNG files are the first-column app-style icons on the section cha
 - `youcom.png` — Official icon for You.com. Source: https://you.com/favicon.ico. Checked Nov 2026.
 - `zai.png` — Official icon for Z.ai (GLM). Source: official favicon of chat.z.ai, retrieved via Google favicon service and stored locally (https://www.google.com/s2/favicons?domain=chat.z.ai&sz=128). Checked Nov 2026.
 - `zapier.png` — Official icon for Zapier. Source: https://zapier.com/favicon.ico. Checked Nov 2026.
+- `zendesk.png` — Official icon for Zendesk AI. Source: https://d1eipm3vz40hy0.cloudfront.net/images/logos/favicons/zendesk-icon-152.png. Checked Nov 2026.
 
 ## Generated
 

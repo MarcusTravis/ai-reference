@@ -30,7 +30,7 @@
     "description": "AI photo editors and enhancers, including face swap, restore, retouching, AI avatars, and background removal, from Reface and Remini to Picsart and Photoroom.",
     "lede": "The tools people use to edit, enhance, restore, retouch, and face-swap photos, and to make AI avatars: Reface, Remini, Lensa, Picsart, FaceApp, Photoroom, and their peers.",
     "relative": "Scores are relative to the other photo editing and enhancing tools on this page. Website-visit figures under-count tools that live mainly inside a mobile app; store rating counts are cited where we have them.",
-    "limits": "Several of these products are mobile-first, so Similarweb website-visit estimates under-count them. Captions cite SeekTool’s October 2026 Similarweb website-visit estimates where a product site is in that set, and US App Store or Google Play rating counts, or official review totals, where those were a better measure. The Topaz Labs visit figure is for topazlabs.com, which also covers other Topaz apps. Magnific is now the Freepik creative platform at magnific.com; the old magnific.ai visit figure was not used as a clean product score. Picsart and Fotor can also generate images, but they are not listed on the Image generation page. Adobe Firefly and Photoshop stay on the Image generation page."
+    "limits": "Several of these products are mobile-first, so Similarweb website-visit estimates under-count them. Captions cite SeekTool\u2019s October 2026 Similarweb website-visit estimates where a product site is in that set, and US App Store or Google Play rating counts, or official review totals, where those were a better measure. The Topaz Labs visit figure is for topazlabs.com, which also covers other Topaz apps. Magnific is now the Freepik creative platform at magnific.com; the old magnific.ai visit figure was not used as a clean product score. Picsart and Fotor can also generate images, but they are not listed on the Image generation page. Adobe Firefly and Photoshop stay on the Image generation page."
   },
   {
     "file": "video.html",
@@ -63,7 +63,7 @@
     "description": "AI song and score generators, including Suno, Udio, Stable Audio, and Google Lyria.",
     "lede": "Tools that turn a prompt into a song or a score: Suno, Udio, Stable Audio, Google Lyria, AIVA, and related products.",
     "relative": "Scores are relative to the other music tools on this page.",
-    "limits": "There is no single public usage league table for music generators in this research pass. Official pricing is cited where the vendor page showed a dollar figure; Suno’s official pricing page listed plan names but not a captured dollar amount this session."
+    "limits": "There is no single public usage league table for music generators in this research pass. Official pricing is cited where the vendor page showed a dollar figure; Suno\u2019s official pricing page listed plan names but not a captured dollar amount this session."
   },
   {
     "file": "coding.html",
@@ -74,7 +74,7 @@
     "description": "AI coding editors, plugins, and command-line agents, from Cursor and GitHub Copilot to Claude Code and Cline.",
     "lede": "The assistants people use to write and edit code: Cursor, GitHub Copilot, Claude Code, Windsurf, Codex, and open tools like Cline and Aider.",
     "relative": "Scores are relative to the other coding assistants on this page.",
-    "limits": "Open-source tools cite GitHub star counts (checked November 2026). Commercial tools do not have one public usage table; their stars are a relative judgment with whatever source we could cite. Cursor’s public pricing now sits on the same X Subscription ladder as Grok."
+    "limits": "Open-source tools cite GitHub star counts (checked November 2026). Commercial tools do not have one public usage table; their stars are a relative judgment with whatever source we could cite. Cursor\u2019s public pricing now sits on the same X Subscription ladder as Grok."
   },
   {
     "file": "transcription.html",
@@ -85,7 +85,7 @@
     "description": "Speech-to-text APIs and meeting notetakers, including Whisper, Deepgram, Otter, Fireflies, and Fathom.",
     "lede": "Tools that turn speech into text, including meeting notetakers: Whisper, Deepgram, AssemblyAI, Otter, Fireflies, Fathom, and related products.",
     "relative": "Scores are relative to the other transcription tools on this page.",
-    "limits": "This page mixes developer APIs (often usage-based) and meeting apps with monthly seats. API cost bands are editorial estimates when there is no fair individual monthly plan. OpenAI Whisper’s open-source repo star count is cited for the open model, which is not the same as ChatGPT’s built-in voice features."
+    "limits": "This page mixes developer APIs (often usage-based) and meeting apps with monthly seats. API cost bands are editorial estimates when there is no fair individual monthly plan. OpenAI Whisper\u2019s open-source repo star count is cited for the open model, which is not the same as ChatGPT\u2019s built-in voice features."
   },
   {
     "file": "search.html",
@@ -96,7 +96,7 @@
     "description": "Answer engines and AI-assisted search, including Perplexity, ChatGPT Search, Google AI Mode, and Grok.",
     "lede": "Search and answer engines that cite the web: Perplexity, ChatGPT Search, Google AI Mode, Copilot, Grok, and related tools.",
     "relative": "Scores are relative to the other AI search tools on this page. Several of these products also appear as chatbots; the stars here are about search use, not the parent chat app as a whole.",
-    "limits": "Perplexity’s 0.8% share in Similarweb’s October 2026 seven-assistant website-visit set is cited where it applies. Google AI Mode lives inside Search and is not measured by those chatbot-site shares. Several rows are editorial estimates."
+    "limits": "Perplexity\u2019s 0.8% share in Similarweb\u2019s October 2026 seven-assistant website-visit set is cited where it applies. Google AI Mode lives inside Search and is not measured by those chatbot-site shares. Several rows are editorial estimates."
   },
   {
     "file": "agents.html",
@@ -107,7 +107,18 @@
     "description": "Agent products and automation platforms, from ChatGPT agents and Claude computer use to Zapier, Make, and n8n.",
     "lede": "Tools that take actions, not just answers: ChatGPT agents, Claude computer use, Zapier, Make, n8n, Lindy, Manus, and related products.",
     "relative": "Scores are relative to the other agent and automation tools on this page.",
-    "limits": "This category mixes consumer agents, office copilots, and workflow platforms. n8n’s GitHub star count is cited for the open project. Several consumer-agent popularity scores are editorial estimates because there is no shared public usage table."
+    "limits": "This category mixes consumer agents, office copilots, and workflow platforms. n8n\u2019s GitHub star count is cited for the open project. Several consumer-agent popularity scores are editorial estimates because there is no shared public usage table."
+  },
+  {
+    "file": "apps.html",
+    "slug": "apps",
+    "json": "apps.json",
+    "title": "Business and everyday AI apps",
+    "noun": "apps",
+    "description": "Apps that use AI for practical work: marketing and CRM, sales, customer support, writing, and productivity, for businesses and for regular people, including GoHighLevel, HubSpot, Grammarly, Notion AI, and Canva Magic Studio.",
+    "lede": "Apps that put AI models to work on everyday jobs: marketing and CRM, sales, support, writing, and productivity, for businesses and for regular people. GoHighLevel, HubSpot, Grammarly, Notion AI, Canva Magic Studio, and their peers.",
+    "relative": "Scores are relative to the other business and everyday AI apps on this page. Website-visit figures for large platforms (Canva, Notion, HubSpot, Zendesk, ClickUp, Salesforce) are for the whole product site, not only the AI feature.",
+    "limits": "Several rows are large platforms with built-in AI, not standalone AI-only apps. Similarweb website-visit estimates for October 2026 via SeekTool are cited for canva.com, notion.com, salesforce.com, zendesk.com, grammarly.com, hubspot.com, quillbot.com, clickup.com, gamma.app, superhuman.com, intercom.com, jasper.ai, and copy.ai. The Salesforce figure is the company site, which also covers many products besides Agentforce. GoHighLevel\u2019s 14.2M October 2026 visits are a Semrush estimate for gohighlevel.com, because a SeekTool Similarweb figure was not found for that domain this session. Zapier is already on the Agents and automation page and is not repeated here. Canva Magic Studio was not already on the Image generation or Photo editing pages. Cost is the typical individual or entry paid plan most people buy; business seat and usage-based pricing is noted in the caption. No numbers were invented."
   },
   {
     "file": "gen3d.html",

@@ -8,9 +8,9 @@ BUILD = ROOT / "_build"
 # Apex is canonical; www should redirect to the apex (set later in Cloudflare).
 # Suggested Cloudflare Pages project name: aitoolchart
 CANON = "https://aitoolchart.net"
-CHECKED, CHECKED_ISO = "Nov 14, 2026", "2026-11-14"
-UPDATED, UPDATED_ISO = "Nov 14, 2026", "2026-11-14"
-ASSET_V = "20261114c"
+CHECKED, CHECKED_ISO = "Nov 15, 2026", "2026-11-15"
+UPDATED, UPDATED_ISO = "Nov 15, 2026", "2026-11-15"
+ASSET_V = "20261115a"
 
 def row_id(name):
     return "p-" + _re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
@@ -27,6 +27,7 @@ NAV = [
     ("transcription.html", "Transcripts"),
     ("search.html", "Search"),
     ("agents.html", "Agents"),
+    ("apps.html", "Apps"),
     ("gen3d.html", "3D"),
     ("updates.html", "Updates"),
 ]
@@ -264,6 +265,7 @@ SECTION_LABELS = {
     "transcription": "Transcription & STT",
     "search": "AI search",
     "agents": "Agents & automation",
+    "apps": "Business & everyday AI apps",
     "gen3d": "3D generation",
 }
 
@@ -292,6 +294,7 @@ def write_home(counts, sections):
         ("transcription.html", f"{counts['transcription'][0]} transcription tools", "Transcription &amp; STT", "Whisper, Deepgram, AssemblyAI, Otter, Fireflies, Fathom, and meeting notetakers."),
         ("search.html", f"{counts['search'][0]} search tools", "AI search", "Perplexity, ChatGPT Search, Google AI Mode, Copilot, Grok, You.com, and related answer engines."),
         ("agents.html", f"{counts['agents'][0]} agent tools", "Agents &amp; automation", "ChatGPT agents, Claude computer use, Zapier, Make, n8n, Lindy, Manus, and related tools."),
+        ("apps.html", f"{counts['apps'][0]} apps", "Business &amp; everyday AI apps", "GoHighLevel, HubSpot, Grammarly, Notion AI, Canva Magic Studio, Jasper, and other business and everyday AI apps."),
         ("gen3d.html", f"{counts['gen3d'][0]} 3D tools", "3D generation", "Meshy, Tripo, Rodin, CSM, Spline, Hunyuan3D, and other image-to-3D tools."),
     ]
     grid = "".join(
@@ -300,16 +303,16 @@ def write_home(counts, sections):
     )
     html = head(
         "AI Reference Library",
-        "Free, ad-free guide to AI tools: chatbots, image generation, photo editing, video, voice, music, coding assistants, transcription, AI search, agents, and 3D, with cited ratings.",
+        "Free, ad-free guide to AI tools: chatbots, image generation, photo editing, video, voice, music, coding assistants, transcription, AI search, agents, business and everyday apps, and 3D, with cited ratings.",
         "/",
     )
     html += "<body>\n" + wrap(nav("index.html"))
     html += '<div class="wrap chart-wrap" id="main">\n'
     html += hero("Independent AI tools guide", "AI Reference Library",
-                 "A free, ad-free field guide to the AI tools people actually use to chat, draw, retouch, film, speak, compose, code, transcribe, search, automate, and model in 3D. Popularity is cited, not invented.")
+                 "A free, ad-free field guide to the AI tools people actually use to chat, draw, retouch, film, speak, compose, code, transcribe, search, automate, run a business, write, and model in 3D. Popularity is cited, not invented.")
     html += f"""  <section class="site-search" role="search" aria-labelledby="site-search-h">
     <h2 id="site-search-h">Search every product</h2>
-    <label for="site-search">Chatbots, image tools, photo editors, coding assistants, and the rest — by name, maker, or tag</label>
+    <label for="site-search">Chatbots, image tools, photo editors, coding assistants, business apps, and the rest — by name, maker, or tag</label>
     <input type="search" id="site-search" placeholder="Try ChatGPT, Midjourney, Cursor, ElevenLabs…" autocomplete="off" spellcheck="false" aria-describedby="site-status" aria-controls="site-results">
     <p class="sr-status" id="site-status" aria-live="polite">Searches all {len(index)} products across every section.</p>
     <ul class="sr-list" id="site-results" hidden></ul>
@@ -349,23 +352,28 @@ def write_updates():
     html += hero("Changelog", "Updates", "A short, plain-English record of what changed on this site.", checked=False)
     html += f"""  <article>
     <div class="log">
+      <h3>New section: Business and everyday AI apps</h3>
+      <p><time datetime="2026-11-15">Nov 15, 2026</time></p>
+      <p>Added a twelfth comparison chart for apps that use AI for practical work — marketing and CRM, sales, customer support, writing, and productivity — for businesses and for regular people, including GoHighLevel, HubSpot (Breeze AI), Salesforce Agentforce, Intercom Fin, Zendesk AI, Jasper, Copy.ai, Grammarly, Notion AI, Canva Magic Studio, Gamma, Superhuman, QuillBot, and ClickUp Brain. It has the same columns, filter chips, search, sort, and sticky scrollbar as the other charts. Zapier stays on the Agents and automation page. Popularity is sourced for all 14 rows (SeekTool’s October 2026 Similarweb website-visit estimates, plus a Semrush October 2026 figure for gohighlevel.com). Cost follows the same rule as the other pages: the typical individual or entry paid plan most people buy, with business seat pricing noted. Gamma’s cost band is an editorial estimate because no public dollar figure was captured from its pricing page this session. See CHANGELOG.md for the source list.</p>
+    </div>
+    <div class="log">
       <h3>New section: Photo editing and enhancing</h3>
-      <p><time datetime="{CHECKED_ISO}">{CHECKED}</time></p>
+      <p><time datetime="2026-11-14">Nov 14, 2026</time></p>
       <p>Added an eleventh comparison chart for AI photo editing and enhancing — face swap, restore, retouching, AI avatars, and background removal — with Reface, Remini, Lensa, Picsart, FaceApp, Photoroom, Facetune, Fotor, Topaz Photo, Let’s Enhance, and Magnific. It has the same columns, filter chips, search, sort, and sticky scrollbar as the other charts. Popularity is sourced where a citable figure was found (SeekTool’s October 2026 Similarweb website-visit estimates, plus App Store and Google Play rating counts for mobile-first apps). Cost follows the same rule as the other pages: the typical individual paid plan most people buy. Picsart and Fotor can also generate images, but they are listed here rather than on the Image generation page. See CHANGELOG.md for the source list.</p>
     </div>
     <div class="log">
       <h3>Published at aitoolchart.net</h3>
-      <p><time datetime="{CHECKED_ISO}">{CHECKED}</time></p>
+      <p><time datetime="2026-11-14">Nov 14, 2026</time></p>
       <p>The site is live at <a href="https://aitoolchart.net">aitoolchart.net</a>. The public repository is <a href="https://github.com/MarcusTravis/ai-reference">github.com/MarcusTravis/ai-reference</a>. www.aitoolchart.net redirects to the apex.</p>
     </div>
     <div class="log">
       <h3>More sourced popularity, shorter captions</h3>
-      <p><time datetime="{CHECKED_ISO}">{CHECKED}</time></p>
+      <p><time datetime="2026-11-14">Nov 14, 2026</time></p>
       <p>A second research pass filled in quantitative popularity sources for many rows that had been editorial estimates, mostly Similarweb website-visit estimates for October 2026 via SeekTool, plus Semrush September 2026 figures from Tako’s a16z Top 100 table, GitHub star counts, and OpenRouter token rankings. Numbers were not invented; rows still without a usable source stay labeled “Editorial estimate.” Cost and popularity captions were shortened. Cost is now rated, on every page, on the typical individual paid plan most people buy (the vendor’s popular plan when they mark one). The ElevenLabs price wording was cleaned up, Midjourney is rated on Standard, and Suno Pro $10/month is now sourced from suno.com/pricing. Official cursor.com/pricing and x.ai/pricing still show one X Subscription ladder shared by Cursor and Grok. See CHANGELOG.md for the source list.</p>
     </div>
     <div class="log">
       <h3>Site launch</h3>
-      <p><time datetime="{CHECKED_ISO}">{CHECKED}</time></p>
+      <p><time datetime="2026-11-14">Nov 14, 2026</time></p>
       <p>The first version of the AI Reference Library: a homepage with search across every product, plus ten comparison charts — LLMs and chatbots, image generation, video generation, voice/TTS and cloning, music generation, coding assistants, transcription and speech-to-text (including meeting notetakers), AI search, agents and automation, and 3D generation. Each chart has filter chips, search, sort (including cheapest-first and priciest-first), a sticky header, and a sticky horizontal scrollbar. Popularity and cost captions were researched in November 2026. See CHANGELOG.md in the repository for the source list.</p>
     </div>
   </article>
@@ -390,6 +398,7 @@ def write_404():
         ("/transcription", "Transcription", "Open →"),
         ("/search", "AI search", "Open →"),
         ("/agents", "Agents", "Open →"),
+        ("/apps", "Business apps", "Open →"),
         ("/gen3d", "3D generation", "Open →"),
     ]
     grid = "".join(
@@ -430,7 +439,7 @@ def write_404():
     print("wrote 404.html")
 
 def write_meta(stats):
-    pages = ["/", "/chatbots", "/image", "/photo", "/video", "/voice", "/music", "/coding", "/transcription", "/search", "/agents", "/gen3d", "/updates"]
+    pages = ["/", "/chatbots", "/image", "/photo", "/video", "/voice", "/music", "/coding", "/transcription", "/search", "/agents", "/apps", "/gen3d", "/updates"]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for p in pages:
         sm.append(f"  <url><loc>{CANON}{p}</loc></url>")
@@ -450,7 +459,7 @@ def write_meta(stats):
 
 **Intended live site:** [{CANON}]({CANON})
 
-A free, ad-free field guide to AI tools — chatbots, image generation, photo editing and enhancing, video generation, voice, music, coding assistants, transcription, AI search, agents, and 3D generation. Built as a plain static site (HTML, CSS, and JavaScript). Cloudflare Pages should use **no build command**; the HTML is already generated. Suggested Pages project name: `aitoolchart`.
+A free, ad-free field guide to AI tools — chatbots, image generation, photo editing and enhancing, video generation, voice, music, coding assistants, transcription, AI search, agents, business and everyday AI apps, and 3D generation. Built as a plain static site (HTML, CSS, and JavaScript). Cloudflare Pages should use **no build command**; the HTML is already generated. Suggested Pages project name: `aitoolchart`.
 
 The site URL is set once as `CANON` in `_build/generate.py` and is used for canonical tags, the sitemap, and Open Graph images. The apex `{CANON}` is canonical; `www` should redirect to the apex.
 

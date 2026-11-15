@@ -2,6 +2,42 @@
 
 All notable changes to the AI Reference Library, with sources.
 
+## Nov 15, 2026 — Business and everyday AI apps section
+
+Added a twelfth comparison chart, [Business and everyday AI apps](https://aitoolchart.net/apps), for marketing and CRM, sales, customer support, writing, and productivity tools used by businesses and by regular people. The new page follows the same recipe as the other sections: product icon in the first column, sourced or labeled-editorial popularity and cost ratings, plain-word filter chips (Business, Personal, Marketing, CRM and sales, Support, Writing), search, sort, and a sticky horizontal scrollbar. A home-page card and nav item (“Apps”) were added. The generated HTML, sitemap, and 404 links were updated by `_build/generate.py`.
+
+The 14 tools are Canva Magic Studio, Notion AI, Salesforce Agentforce, Zendesk AI, Grammarly, HubSpot (Breeze AI), QuillBot, ClickUp Brain, Gamma, GoHighLevel (HighLevel), Superhuman, Intercom Fin, Jasper, and Copy.ai. None were already on another page. Zapier stays on the Agents and automation page. Canva Magic Studio was not already on the Image generation or Photo editing pages.
+
+Popularity is sourced for all 14 rows. No numbers were invented. Several visit figures are for a whole product platform, not only the AI feature; those captions say so. The Salesforce figure is for salesforce.com, which also covers many products besides Agentforce.
+
+**Popularity sources (checked 15 November 2026)**
+
+- Similarweb website-visit estimates for October 2026, as published on SeekTool: Canva 954.6M (canva.com); Notion 175.3M (notion.com); Salesforce 111.9M (salesforce.com, company site); Zendesk 61.0M (zendesk.com); Grammarly 58.9M (grammarly.com); HubSpot 44.1M (hubspot.com); QuillBot 36.6M (quillbot.com); ClickUp 33.9M (clickup.com); Gamma 20.8M (gamma.app); Superhuman 6.51M (superhuman.com); Intercom 4.47M (intercom.com); Jasper 373.0K (jasper.ai); Copy.ai 344.3K (copy.ai). Website visits under-count tools that live mainly inside a desktop or mobile app, and platform-wide counts over-count a single AI feature.
+- Semrush website-visit estimate for October 2026, from Semrush’s public domain overview for gohighlevel.com (last updated 11 November 2026): GoHighLevel 14.2M. A SeekTool Similarweb figure was not found for that domain this session.
+- Official vendor claims cited in captions: Grammarly, “trusted by over 40 million people and 50,000 organizations” (grammarly.com/plans).
+
+**Official pricing (checked 15 November 2026)**
+
+- Canva Pro US$144/year for one person (about $12/month billed yearly): canva.com/pricing. Business is US$250/year per person.
+- Notion Business $20 per member/month, labeled Recommended, includes Notion Agent: notion.com/pricing. Plus is $10 per member/month and includes only a trial of Notion AI.
+- Salesforce Agentforce User License $50 USD/user/month: salesforce.com/agentforce/pricing. Other Agentforce uses are Flex Credits or larger editions (Max Edition from $550/user/month was also listed).
+- Zendesk Suite Professional $115/agent/month paid yearly, labeled most popular: zendesk.com/pricing. Suite Team is $55/agent/month paid yearly; Support Team is $19/agent/month paid yearly. Automated resolutions are usage-based.
+- Grammarly Pro $12/member/month billed annually ($144/year), or $30/member/month billed monthly: grammarly.com/plans and Grammarly Support, “How much does Grammarly Pro cost?”
+- HubSpot Starter Core Seat $20/month per seat, including Breeze Assistant: legal.hubspot.com/hubspot-product-and-services-catalog. Marketing Hub Starter was also shown as starting at $20/month per seat, with a limited-time new-customer price from $10: hubspot.com/products/marketing/get-started.
+- QuillBot Premium $8.33/month billed annually as $99.95, or $19.95/month: official QuillBot blog, “How much is QuillBot Premium?”
+- ClickUp Business $17/user/month billed yearly, which includes Brain² Premium Models: clickup.com/pricing. Core is $9/user/month billed yearly; Max is $100/user/month billed yearly.
+- GoHighLevel Starter $97/month, or $970/year: gohighlevel.com/pricing. Unlimited is $297/month, or $2,970/year; Pro is $497/month, or $4,970/year. Usage charges apply for phone, SMS, email, and some AI features.
+- Superhuman Mail Starter $25 per member/month, billed annually: superhuman.com/mail/pricing.
+- Intercom Essential $19/seat/month billed annually, or $29/seat/month billed monthly, plus $0.99 per Fin outcome: intercom.com/pricing.
+- Jasper Pro $59/month billed yearly, or $69/month billed monthly: jasper.ai/pricing. Business is custom pricing (contact sales).
+- Copy.ai Chat $24/month billed annually as $288/year, or $29/month billed monthly, for a 5-seat plan: copy.ai/pricing. Growth starts at $1,000/month.
+
+Gamma’s cost band is an editorial estimate. Gamma’s help center lists Free, Plus, Pro, Ultra, and Business plans, but no public dollar figure was captured from gamma.app/pricing this session. No dollar amounts were invented for that row.
+
+**Icons**
+
+- Official vendor icons, stored locally as 128×128 PNGs. QuillBot’s site returned 403 for direct favicon URLs, so its icon was retrieved via Google’s favicon service and stored locally. See `icons/README.md` for the per-file source list.
+
 ## Nov 14, 2026 — Photo editing and enhancing section
 
 Added an eleventh comparison chart, [Photo editing and enhancing](https://aitoolchart.net/photo), for face swap, photo enhance and restore, AI avatars, retouching, and background removal. The new page follows the same recipe as the other sections: product icon in the first column, sourced or labeled-editorial popularity and cost ratings, plain-word filter chips, search, sort, and a sticky horizontal scrollbar. A home-page card and nav item (“Photo”) were added. The generated HTML, sitemap, and 404 links were updated by `_build/generate.py`.

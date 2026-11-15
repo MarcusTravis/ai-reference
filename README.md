@@ -2,7 +2,7 @@
 
 **Intended live site:** [https://aitoolchart.net](https://aitoolchart.net)
 
-A free, ad-free field guide to AI tools — chatbots, image generation, photo editing and enhancing, video generation, voice, music, coding assistants, transcription, AI search, agents, and 3D generation. Built as a plain static site (HTML, CSS, and JavaScript). Cloudflare Pages should use **no build command**; the HTML is already generated. Suggested Pages project name: `aitoolchart`.
+A free, ad-free field guide to AI tools — chatbots, image generation, photo editing and enhancing, video generation, voice, music, coding assistants, transcription, AI search, agents, business and everyday AI apps, and 3D generation. Built as a plain static site (HTML, CSS, and JavaScript). Cloudflare Pages should use **no build command**; the HTML is already generated. Suggested Pages project name: `aitoolchart`.
 
 The site URL is set once as `CANON` in `_build/generate.py` and is used for canonical tags, the sitemap, and Open Graph images. The apex `https://aitoolchart.net` is canonical; `www` should redirect to the apex.
 
