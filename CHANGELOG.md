@@ -2,6 +2,38 @@
 
 All notable changes to the AI Reference Library, with sources.
 
+## Nov 14, 2026 — Photo editing and enhancing section
+
+Added an eleventh comparison chart, [Photo editing and enhancing](https://aitoolchart.net/photo), for face swap, photo enhance and restore, AI avatars, retouching, and background removal. The new page follows the same recipe as the other sections: product icon in the first column, sourced or labeled-editorial popularity and cost ratings, plain-word filter chips, search, sort, and a sticky horizontal scrollbar. A home-page card and nav item (“Photo”) were added. The generated HTML, sitemap, and 404 links were updated by `_build/generate.py`.
+
+The 11 tools are Picsart, Photoroom, FaceApp, Facetune, Reface, Remini, Fotor, Lensa, Topaz Photo, Let’s Enhance, and Magnific. None were already on the Image generation page. Picsart and Fotor can also generate images; that overlap is noted on their rows. Adobe Firefly and Photoshop stay on the Image generation page. Topaz Photo is the current Topaz Labs product that replaces the older Topaz Photo AI app. Magnific is now the Freepik creative platform at magnific.com and is still known for the Magnific upscaler.
+
+Popularity is sourced for 10 of 11 rows. Magnific is an editorial estimate: SeekTool’s October 2026 figure of 39.87K visits is for the old magnific.ai domain, and magnific.com’s mixed stock-and-AI traffic was not used as a clean product figure. No numbers were invented.
+
+**Popularity sources (checked 14 November 2026)**
+
+- Similarweb website-visit estimates for October 2026, as published on SeekTool: Photoroom 18.2M (photoroom.com); Picsart 16.5M (picsart.com); Fotor 5.8M (fotor.com); Topaz Labs 2.7M (topazlabs.com, company site that also covers other Topaz apps); Let’s Enhance 649.3K (letsenhance.io); Facetune 436.3K (facetuneapp.com); Remini 388.8K (app.remini.ai); Reface 260.4K (reface.ai); Lensa 27.0K (lensa.app). Website visits under-count mobile-first apps.
+- US App Store rating counts, checked 14 November 2026: FaceApp 1.8M ratings at 4.7 average (FaceApp: Perfect Face Editor); Picsart 1.2M ratings, #12 in Photo & Video; Lensa 418K ratings at 4.7 average; Remini 360K ratings at 4.6 average, #75 in Photo & Video; Photoroom 232K ratings.
+- Official review totals cited by the vendor: Reface, 474,468 Apple App Store reviews at 4.8 (reface.ai/unboring); Facetune, 338K App Store reviews and 765K Google Play reviews (facetuneapp.com/pricing).
+- Google Play structured data for Reface: Face Swap AI Generator (play.google.com/store/apps/details?id=video.reface.app): 1.8M ratings (ratingCount 1,804,633).
+- Photoroom’s official App Store listing states it is trusted by over 300 million users. That is a vendor claim, noted as such in the caption.
+
+**Official pricing (checked 14 November 2026)**
+
+- Picsart Pro $15/month, or $10.50/month billed yearly, labeled most popular: picsart.com/pricing.
+- Photoroom Pro $7.50/month billed yearly, labeled most popular: photoroom.com/pricing.
+- Facetune Yearly $77.99/year (about $6.50/month), labeled most popular; monthly starts at $25/month: facetuneapp.com/pricing.
+- Reface web Basic $7.58/month billed annually as $90.99 (a $113.99 figure was shown struck through); Premium $9.99/month billed annually as $119.99: reface.ai/unboring. Mobile app prices may differ.
+- Topaz Photo Personal $39/month with no commitment, or $25/month on an annual commitment, or $199/year billed annually: topazlabs.com/topaz-photo. Rated on Personal $39/month.
+- Let’s Enhance Pro $32/month, or $24/month billed annually, labeled most popular; Starter $12/month, or $9/month billed annually: letsenhance.io/pricing.
+- Magnific Premium $20/month, or $14.50/month billed annually: magnific.com/pricing. Plus is labeled best value.
+
+FaceApp, Remini, Lensa, and Fotor have editorial cost bands. FaceApp and Lensa publish no public price list (in-app only). Remini’s US App Store listing shows Remini Pro Weekly at $9.99, Remini Lite Weekly from $4.99, and a 1 Month plan at $9.99, but offers vary and there is no single public list. Fotor’s official pricing page did not expose a dollar figure as text in this session. No dollar amounts were invented for those rows.
+
+**Icons**
+
+- Official vendor or App Store / Google Play app icons, stored locally as 128×128 PNGs. See `icons/README.md` for the per-file source list.
+
 ## Nov 14, 2026 — More sourced popularity, shorter captions
 
 A second research pass replaced editorial popularity estimates wherever a real, citable figure could be found. Popularity sourced rows went from 20 to 78 of 101. The remaining 23 stay labeled “Editorial estimate.” No numbers were invented.

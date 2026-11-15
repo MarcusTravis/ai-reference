@@ -19,6 +19,7 @@ NAV = [
     ("index.html", "Home"),
     ("chatbots.html", "Chatbots"),
     ("image.html", "Image"),
+    ("photo.html", "Photo"),
     ("video.html", "Video"),
     ("voice.html", "Voice"),
     ("music.html", "Music"),
@@ -255,6 +256,7 @@ initCatalog(DATA, {{ noun: {json.dumps(sec["noun"])}, defaultSort: "pop", extraC
 SECTION_LABELS = {
     "chatbots": "LLMs & chatbots",
     "image": "Image generation",
+    "photo": "Photo editing & enhancing",
     "video": "Video generation",
     "voice": "Voice, TTS & cloning",
     "music": "Music generation",
@@ -282,6 +284,7 @@ def write_home(counts, sections):
     cards = [
         ("chatbots.html", f"{counts['chatbots'][0]} chatbots", "LLMs &amp; chatbots", "ChatGPT, Claude, Gemini, Grok, Copilot, DeepSeek, and other assistants people actually open."),
         ("image.html", f"{counts['image'][0]} image tools", "Image generation", "Midjourney, ChatGPT Images, Ideogram, Flux, Firefly, Leonardo, and related image models."),
+        ("photo.html", f"{counts['photo'][0]} photo tools", "Photo editing &amp; enhancing", "Reface, Remini, Lensa, Picsart, FaceApp, Photoroom, and other photo editors and enhancers."),
         ("video.html", f"{counts['video'][0]} video tools", "Video generation", "Runway, Pika, Kling, Luma, Sora, Veo, Hailuo, and other text-to-video tools."),
         ("voice.html", f"{counts['voice'][0]} voice tools", "Voice, TTS &amp; cloning", "ElevenLabs, OpenAI TTS, PlayAI, Cartesia, Hume, Descript, and related voice tools."),
         ("music.html", f"{counts['music'][0]} music tools", "Music generation", "Suno, Udio, Stable Audio, Google Lyria, AIVA, and other song and score tools."),
@@ -297,16 +300,16 @@ def write_home(counts, sections):
     )
     html = head(
         "AI Reference Library",
-        "Free, ad-free guide to AI tools: chatbots, image and video generation, voice, music, coding assistants, transcription, AI search, agents, and 3D, with cited ratings.",
+        "Free, ad-free guide to AI tools: chatbots, image generation, photo editing, video, voice, music, coding assistants, transcription, AI search, agents, and 3D, with cited ratings.",
         "/",
     )
     html += "<body>\n" + wrap(nav("index.html"))
     html += '<div class="wrap chart-wrap" id="main">\n'
     html += hero("Independent AI tools guide", "AI Reference Library",
-                 "A free, ad-free field guide to the AI tools people actually use to chat, draw, film, speak, compose, code, transcribe, search, automate, and model in 3D. Popularity is cited, not invented.")
+                 "A free, ad-free field guide to the AI tools people actually use to chat, draw, retouch, film, speak, compose, code, transcribe, search, automate, and model in 3D. Popularity is cited, not invented.")
     html += f"""  <section class="site-search" role="search" aria-labelledby="site-search-h">
     <h2 id="site-search-h">Search every product</h2>
-    <label for="site-search">Chatbots, image tools, coding assistants, and the rest — by name, maker, or tag</label>
+    <label for="site-search">Chatbots, image tools, photo editors, coding assistants, and the rest — by name, maker, or tag</label>
     <input type="search" id="site-search" placeholder="Try ChatGPT, Midjourney, Cursor, ElevenLabs…" autocomplete="off" spellcheck="false" aria-describedby="site-status" aria-controls="site-results">
     <p class="sr-status" id="site-status" aria-live="polite">Searches all {len(index)} products across every section.</p>
     <ul class="sr-list" id="site-results" hidden></ul>
@@ -346,6 +349,11 @@ def write_updates():
     html += hero("Changelog", "Updates", "A short, plain-English record of what changed on this site.", checked=False)
     html += f"""  <article>
     <div class="log">
+      <h3>New section: Photo editing and enhancing</h3>
+      <p><time datetime="{CHECKED_ISO}">{CHECKED}</time></p>
+      <p>Added an eleventh comparison chart for AI photo editing and enhancing — face swap, restore, retouching, AI avatars, and background removal — with Reface, Remini, Lensa, Picsart, FaceApp, Photoroom, Facetune, Fotor, Topaz Photo, Let’s Enhance, and Magnific. It has the same columns, filter chips, search, sort, and sticky scrollbar as the other charts. Popularity is sourced where a citable figure was found (SeekTool’s October 2026 Similarweb website-visit estimates, plus App Store and Google Play rating counts for mobile-first apps). Cost follows the same rule as the other pages: the typical individual paid plan most people buy. Picsart and Fotor can also generate images, but they are listed here rather than on the Image generation page. See CHANGELOG.md for the source list.</p>
+    </div>
+    <div class="log">
       <h3>Published at aitoolchart.net</h3>
       <p><time datetime="{CHECKED_ISO}">{CHECKED}</time></p>
       <p>The site is live at <a href="https://aitoolchart.net">aitoolchart.net</a>. The public repository is <a href="https://github.com/MarcusTravis/ai-reference">github.com/MarcusTravis/ai-reference</a>. www.aitoolchart.net redirects to the apex.</p>
@@ -374,6 +382,7 @@ def write_404():
         ("/", "All guides", "Home →"),
         ("/chatbots", "LLMs & chatbots", "Open →"),
         ("/image", "Image generation", "Open →"),
+        ("/photo", "Photo editing", "Open →"),
         ("/video", "Video generation", "Open →"),
         ("/voice", "Voice &amp; TTS", "Open →"),
         ("/music", "Music generation", "Open →"),
@@ -421,7 +430,7 @@ def write_404():
     print("wrote 404.html")
 
 def write_meta(stats):
-    pages = ["/", "/chatbots", "/image", "/video", "/voice", "/music", "/coding", "/transcription", "/search", "/agents", "/gen3d", "/updates"]
+    pages = ["/", "/chatbots", "/image", "/photo", "/video", "/voice", "/music", "/coding", "/transcription", "/search", "/agents", "/gen3d", "/updates"]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for p in pages:
         sm.append(f"  <url><loc>{CANON}{p}</loc></url>")
@@ -441,7 +450,7 @@ def write_meta(stats):
 
 **Intended live site:** [{CANON}]({CANON})
 
-A free, ad-free field guide to AI tools — chatbots, image and video generation, voice, music, coding assistants, transcription, AI search, agents, and 3D generation. Built as a plain static site (HTML, CSS, and JavaScript). Cloudflare Pages should use **no build command**; the HTML is already generated. Suggested Pages project name: `aitoolchart`.
+A free, ad-free field guide to AI tools — chatbots, image generation, photo editing and enhancing, video generation, voice, music, coding assistants, transcription, AI search, agents, and 3D generation. Built as a plain static site (HTML, CSS, and JavaScript). Cloudflare Pages should use **no build command**; the HTML is already generated. Suggested Pages project name: `aitoolchart`.
 
 The site URL is set once as `CANON` in `_build/generate.py` and is used for canonical tags, the sitemap, and Open Graph images. The apex `{CANON}` is canonical; `www` should redirect to the apex.
 
