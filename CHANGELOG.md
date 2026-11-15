@@ -32,6 +32,7 @@ Company-wide domains were not used as product traffic (for example adobe.com for
 - Public GitHub repository: https://github.com/MarcusTravis/ai-reference (branch `main`).
 - Cloudflare Pages project `aitoolchart`, production branch `main`, no build command, output directory the repo root.
 - Live canonical site: https://aitoolchart.net. www.aitoolchart.net redirects to the apex with a 301.
+- Connected automatic deploys from GitHub `main` to the `aitoolchart` Pages project.
 
 **Layout**
 
