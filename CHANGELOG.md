@@ -2,6 +2,35 @@
 
 All notable changes to the AI Reference Library, with sources.
 
+## Nov 14, 2026 — More sourced popularity, shorter captions
+
+A second research pass replaced editorial popularity estimates wherever a real, citable figure could be found. Popularity sourced rows went from 20 to 78 of 101. The remaining 23 stay labeled “Editorial estimate.” No numbers were invented.
+
+Captions were shortened to one or two short lines (plan and price, source, checked date). Cost is now rated, on every page, on the typical individual paid plan most people buy: the plan the vendor marks as popular or most popular when they mark one; otherwise the ordinary individual paid plan, not the cheapest limited tier and not an ultra or teams tier.
+
+**Caption and band fixes**
+
+- ElevenLabs: wording corrected to Creator $22/month ($11 first month), labeled popular; Starter is $6/month after a $1 first month (elevenlabs.io/pricing).
+- Midjourney: band moved from Basic $10 (`$`) to Standard $30 (`$$$`), the typical individual paid plan most people buy (midjourney.com/pricing).
+- Suno: Pro $10/month or $8/month billed yearly, labeled most popular, is now a sourced price (suno.com/pricing). Previously the dollar figure had not been captured.
+- Cursor and Grok: rechecked against official cursor.com/pricing and x.ai/pricing. They do share one X Subscription ladder and a usage pool (Free; Plus $8/month, Grok models only in Cursor; Premium $30/month, labeled most popular; Super $100; Ultra $200). Subscriptions are sold through X Subscription Corp. The earlier caption was kept and tightened, not reversed.
+
+**New or added popularity sources (checked 14 November 2026)**
+
+- Similarweb website-visit estimates for October 2026, as published on SeekTool category and tool pages (SeekTool states the figures come from Similarweb and that visits are not unique users). Examples: Character.AI 154.2M; Suno 78.1M; Meta AI 43.9M; ElevenLabs 42.4M; Qwen 35.1M; Cursor 23.3M; Tripo 25.2M; Meshy 19.5M; Manus 19.2M; SeaArt 15.7M; Kling 16.1M; Google Antigravity 16.1M; Rodin/hyper3d.ai 10.8M; HeyGen 9.7M; Midjourney 8.6M; Mistral.ai 8.0M (company site); Leonardo 7.6M; Runway 7.5M; Otter 7.36M; Speechify 5.46M; Make 5.16M; Zapier 5.07M; n8n.io 4.52M; Fireflies 4.41M; Vidu 4.0M; Descript 3.27M; Notta 2.59M; Windsurf 2.55M; Luma Labs 2.25M; Ideogram 1.9M; Cartesia 1.78M; Microsoft Designer 1.64M; Recraft 1.54M; Rev 1.52M; Udio 1.06M; Pika 1.06M; Exa 1.06M; You.com 948K; Deepgram 864K; Fathom 807K; Spline 588K; 3D AI Studio 616K; AssemblyAI 454K; Lindy 323K; Gemini Code Assist (codeassist.google) 231K; Soundraw 205K; Relevance AI 192K; Hume 188K; Resemble 185K; Grain 174K; Beatoven 156K; AIVA 113K; Tabnine 70K; Phind 9.6K.
+- Semrush website-visit estimates for September 2026, from Tako’s “Digital Performance of a16z Top 100 Gen AI Consumer Apps” table (Tako cites Semrush via Tako): Hailuo (hailuoai.video) 5.9M.
+- GitHub API star counts, checked 14 November 2026, including earlier figures and new ones: n8n-io/n8n 210,503; openai/whisper 112,711; cline/cline 71,633; Aider-AI/aider 50,118; continuedev/continue 36,481; black-forest-labs/flux 26,059; Tencent-Hunyuan/Hunyuan3D-2 15,412; Stability-AI/stable-audio-tools 3,911.
+- OpenRouter public model rankings (openrouter.ai/rankings), mid-November 2026, still used as an API-side signal (for example GLM models near the top of token usage).
+- The October 2026 Similarweb seven-assistant website-visit shares used at launch are unchanged: ChatGPT 55.7%, Gemini 24.2%, Claude 11.5%, DeepSeek 3.4%, Grok 2.2%, Microsoft Copilot 1.1%, Perplexity 0.8%.
+
+A GitHub Copilot “50 million users” figure circulating in secondary write-ups was not used. Microsoft’s FY26 Q4 earnings discussion (July 29, 2026) that we could check reported GitHub Copilot revenue growth and more than 30 million paid Microsoft 365 Copilot seats, which is a different product.
+
+Company-wide domains were not used as product traffic (for example adobe.com for Firefly, jetbrains.com for JetBrains AI). Feature-inside-a-larger-app rows such as Sora, Veo, ChatGPT Agent, and Google AI Mode stay editorial where there is no separate public usage table.
+
+**Layout**
+
+- `--nav-h` is set from the live `.topnav` height on load and resize, so deep links and `scroll-margin-top` clear the nav on desktop and on a wrapped mobile nav. Chart column headers still stick inside the horizontal scrollport, same as bimchart.net.
+
 ## Nov 14, 2026 — Initial local release
 
 Built the first version of the site locally: homepage with search across every product, plus ten comparison charts (LLMs and chatbots, image generation, video generation, voice/TTS and cloning, music generation, coding assistants, transcription and STT including meeting notetakers, AI search, agents and automation, and 3D generation), an Updates page, sitemap, robots.txt, and a 404 page.

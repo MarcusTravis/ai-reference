@@ -25,7 +25,7 @@
   --btn-h: rgba(196, 166, 255, 0.22);
   --radius: 18px;
   --bar-bg: rgba(196, 166, 255, 0.12);
-  --nav-h: 57px;
+  --nav-h: 81px; /* fallback; JS sets this to the real .topnav height */
   --display: "Syne", "IBM Plex Sans", "Segoe UI", sans-serif;
   --body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, monospace;
@@ -391,7 +391,7 @@ table.chart {
   font-weight: 700;
   background: #120e1c;
   position: sticky;
-  top: 0; /* stick to the table-box, which is the horizontal scrollport */
+  top: 0; /* stick to the table-box horizontal scrollport; --nav-h is used for scroll-margin */
   white-space: nowrap;
   z-index: 3;
   border-bottom: 1px solid var(--line);

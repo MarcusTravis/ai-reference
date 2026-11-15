@@ -27,6 +27,20 @@
 <footer class="site-footer">
 <p class="kofi">Free and ad-free. If this site helped you, <a href="https://ko-fi.com/marcustravis" target="_blank" rel="noopener">buy me a coffee →</a></p>
 </footer>
+<script>
+(function () {
+  function syncNavH() {
+    var nav = document.querySelector(".topnav");
+    if (!nav) return;
+    document.documentElement.style.setProperty("--nav-h", Math.ceil(nav.getBoundingClientRect().height) + "px");
+  }
+  syncNavH();
+  window.addEventListener("resize", syncNavH);
+  if (window.ResizeObserver && document.querySelector(".topnav")) {
+    new ResizeObserver(syncNavH).observe(document.querySelector(".topnav"));
+  }
+})();
+</script>
 
 </body>
 </html>

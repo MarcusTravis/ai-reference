@@ -10,7 +10,7 @@ BUILD = ROOT / "_build"
 CANON = "https://aitoolchart.net"
 CHECKED, CHECKED_ISO = "Nov 14, 2026", "2026-11-14"
 UPDATED, UPDATED_ISO = "Nov 14, 2026", "2026-11-14"
-ASSET_V = "20261114"
+ASSET_V = "20261114c"
 
 def row_id(name):
     return "p-" + _re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
@@ -107,6 +107,20 @@ def footer(home=False):
     return f"""<footer class="site-footer">
 {updated}<p class="kofi">Free and ad-free. If this site helped you, <a href="https://ko-fi.com/marcustravis" target="_blank" rel="noopener">buy me a coffee →</a></p>
 </footer>
+<script>
+(function () {{
+  function syncNavH() {{
+    var nav = document.querySelector(".topnav");
+    if (!nav) return;
+    document.documentElement.style.setProperty("--nav-h", Math.ceil(nav.getBoundingClientRect().height) + "px");
+  }}
+  syncNavH();
+  window.addEventListener("resize", syncNavH);
+  if (window.ResizeObserver && document.querySelector(".topnav")) {{
+    new ResizeObserver(syncNavH).observe(document.querySelector(".topnav"));
+  }}
+}})();
+</script>
 """
 
 def hero(eyebrow, title, lede, checked=True):
@@ -138,7 +152,7 @@ def chips(data):
 def wrap(inner):
     return f'<div class="page-bg"></div>\n{inner}'
 
-COST_HOW = """        <li>Cost is rated on a typical individual paid plan, per month, when we could find a published price this session. The caption names the plan. Annual “per month” equivalents are noted when the vendor publishes them. Higher ultra tiers are mentioned in the caption but do not set the band.</li>
+COST_HOW = """        <li>Cost is rated on the typical individual paid plan most people buy, per month, when we could find a published price this session. If the vendor marks a plan as popular or most popular, that is the plan we use. Otherwise we use the ordinary individual paid plan (not the cheapest limited tier, and not an ultra or teams tier). The caption names the plan. Annual “per month” equivalents are noted when the vendor publishes them. Higher ultra tiers do not set the band.</li>
         <li><strong>Free</strong> — no individual paid plan is required for the core product.</li>
         <li><strong>$</strong> — under $15 / month.</li>
         <li><strong>$$</strong> — $15–29 / month.</li>
@@ -304,11 +318,11 @@ def write_home(counts, sections):
   <div class="notes">
     <section>
       <h2>How to use this site</h2>
-      <p>Search above to jump straight to any product’s row, or open a section. Each section opens as a compact, scrollable comparison chart — one row per product — that you can filter, search, and sort. Stars are a 1–5 popularity judgment with a source caption. Cost uses a Free / $ / $$ / $$$ / $$$$ scale with a source caption, rated on a typical individual monthly plan. “Best for” labels are editorial. Official-site links are not affiliate links.</p>
+      <p>Search above to jump straight to any product’s row, or open a section. Each section opens as a compact, scrollable comparison chart — one row per product — that you can filter, search, and sort. Stars are a 1–5 popularity judgment with a source caption. Cost uses a Free / $ / $$ / $$$ / $$$$ scale with a source caption, rated on the typical individual paid plan most people buy. “Best for” labels are editorial. Official-site links are not affiliate links.</p>
     </section>
     <section>
       <h2>Where the numbers come from</h2>
-      <p>The main web-traffic source for chatbots is Similarweb’s estimates of visits to generative AI assistant websites (October 2026 shares: ChatGPT 55.7%, Gemini 24.2%, Claude 11.5%, DeepSeek 3.4%, Grok 2.2%, Copilot 1.1%, Perplexity 0.8%). Those figures count website visits, not app or in-product use. API-side usage is cited from OpenRouter’s public model rankings (tokens processed, week of mid-November 2026) where that is the more honest signal. Cost figures come from official vendor pricing pages, checked in November 2026. If a product has no usable source, the caption says “Editorial estimate.”</p>
+      <p>Web-traffic figures are third-party estimates of website visits, not app sessions or unique people. Chatbot shares among seven assistants (October 2026) come from Similarweb: ChatGPT 55.7%, Gemini 24.2%, Claude 11.5%, DeepSeek 3.4%, Grok 2.2%, Copilot 1.1%, Perplexity 0.8%. Most other visit counts are Similarweb estimates for October 2026, as published by SeekTool. A few use Semrush estimates for September 2026 from Tako’s a16z Top 100 table, GitHub star counts, or OpenRouter token rankings. Cost figures come from official vendor pricing pages, checked in November 2026, and are rated on the typical individual paid plan most people buy. If a product has no usable source, the caption says “Editorial estimate.”</p>
     </section>
     <section>
       <h2>What this is not</h2>
@@ -331,6 +345,11 @@ def write_updates():
     html += '<div class="wrap chart-wrap" id="main">\n'
     html += hero("Changelog", "Updates", "A short, plain-English record of what changed on this site.", checked=False)
     html += f"""  <article>
+    <div class="log">
+      <h3>More sourced popularity, shorter captions</h3>
+      <p><time datetime="{CHECKED_ISO}">{CHECKED}</time></p>
+      <p>A second research pass filled in quantitative popularity sources for many rows that had been editorial estimates, mostly Similarweb website-visit estimates for October 2026 via SeekTool, plus Semrush September 2026 figures from Tako’s a16z Top 100 table, GitHub star counts, and OpenRouter token rankings. Numbers were not invented; rows still without a usable source stay labeled “Editorial estimate.” Cost and popularity captions were shortened. Cost is now rated, on every page, on the typical individual paid plan most people buy (the vendor’s popular plan when they mark one). The ElevenLabs price wording was cleaned up, Midjourney is rated on Standard, and Suno Pro $10/month is now sourced from suno.com/pricing. Official cursor.com/pricing and x.ai/pricing still show one X Subscription ladder shared by Cursor and Grok. See CHANGELOG.md for the source list.</p>
+    </div>
     <div class="log">
       <h3>Site launch</h3>
       <p><time datetime="{CHECKED_ISO}">{CHECKED}</time></p>
