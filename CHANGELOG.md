@@ -27,6 +27,12 @@ A GitHub Copilot “50 million users” figure circulating in secondary write-up
 
 Company-wide domains were not used as product traffic (for example adobe.com for Firefly, jetbrains.com for JetBrains AI). Feature-inside-a-larger-app rows such as Sora, Veo, ChatGPT Agent, and Google AI Mode stay editorial where there is no separate public usage table.
 
+**Published**
+
+- Public GitHub repository: https://github.com/MarcusTravis/ai-reference (branch `main`).
+- Cloudflare Pages project `aitoolchart`, production branch `main`, no build command, output directory the repo root.
+- Live canonical site: https://aitoolchart.net. www.aitoolchart.net redirects to the apex with a 301.
+
 **Layout**
 
 - `--nav-h` is set from the live `.topnav` height on load and resize, so deep links and `scroll-margin-top` clear the nav on desktop and on a wrapped mobile nav. Chart column headers still stick inside the horizontal scrollport, same as bimchart.net.

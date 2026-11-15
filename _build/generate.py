@@ -346,6 +346,11 @@ def write_updates():
     html += hero("Changelog", "Updates", "A short, plain-English record of what changed on this site.", checked=False)
     html += f"""  <article>
     <div class="log">
+      <h3>Published at aitoolchart.net</h3>
+      <p><time datetime="{CHECKED_ISO}">{CHECKED}</time></p>
+      <p>The site is live at <a href="https://aitoolchart.net">aitoolchart.net</a>. The public repository is <a href="https://github.com/MarcusTravis/ai-reference">github.com/MarcusTravis/ai-reference</a>. www.aitoolchart.net redirects to the apex.</p>
+    </div>
+    <div class="log">
       <h3>More sourced popularity, shorter captions</h3>
       <p><time datetime="{CHECKED_ISO}">{CHECKED}</time></p>
       <p>A second research pass filled in quantitative popularity sources for many rows that had been editorial estimates, mostly Similarweb website-visit estimates for October 2026 via SeekTool, plus Semrush September 2026 figures from Tako’s a16z Top 100 table, GitHub star counts, and OpenRouter token rankings. Numbers were not invented; rows still without a usable source stay labeled “Editorial estimate.” Cost and popularity captions were shortened. Cost is now rated, on every page, on the typical individual paid plan most people buy (the vendor’s popular plan when they mark one). The ElevenLabs price wording was cleaned up, Midjourney is rated on Standard, and Suno Pro $10/month is now sourced from suno.com/pricing. Official cursor.com/pricing and x.ai/pricing still show one X Subscription ladder shared by Cursor and Grok. See CHANGELOG.md for the source list.</p>
