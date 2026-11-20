@@ -17,10 +17,10 @@
       return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
     });
   }
-  function row(d) {
+  function row(d, i) {
     var tags = (d.tags || []).map(function (t) { return '<span class="tag">' + esc(t) + "</span>"; }).join("");
     var icon = d.icon
-      ? '<img class="app-icon" src="icons/' + esc(d.icon) + '.png" width="52" height="52" alt="">'
+      ? '<img class="app-icon" src="icons/' + esc(d.icon) + '.png" width="52" height="52" decoding="async"' + (i >= 4 ? ' loading="lazy"' : "") + ' alt="">'
       : "";
     var site = d.url
       ? '<a class="official" href="' + esc(d.url) + '" rel="noopener noreferrer">Official site →</a>'
@@ -136,7 +136,7 @@
     }
     function render() {
       var rows = sorted(DATA.filter(matches));
-      rowsEl.innerHTML = rows.map(row).join("") ||
+      rowsEl.innerHTML = rows.map(function (d, i) { return row(d, i); }).join("") ||
         '<tr><td colspan="' + (7 + extraCols.length) + '" class="empty">No products match those filters. Clear search or choose All.</td></tr>';
       if (countEl) countEl.textContent = "Showing " + rows.length + " of " + DATA.length + " " + noun;
       syncControls();

@@ -2,6 +2,17 @@
 
 All notable changes to the AI Reference Library, with sources.
 
+## Nov 20, 2026 — Search and AI-crawler pass
+
+A search and AI-search pass, all generated from `_build/generate.py` and `_build/seo.json`. Product data, ratings, and captions were not changed; data was last checked November 15, 2026.
+
+- Unique “comparison chart · AI Reference Library” document titles for every section, and a new home title and description.
+- A short plain-English intro under each section hero, a “Related charts” block, and a visible “Common questions” FAQ on the home page and every section. The FAQ text is taken verbatim from `_build/seo.json`.
+- Structured data (JSON-LD): WebSite, Organization, and FAQPage on the home page; BreadcrumbList, ItemList of SoftwareApplication, and FAQPage on each section; WebPage and BreadcrumbList on Updates. No prices or offers are included.
+- `twitter:image:alt` and an `llms.txt` alternate link in every page head.
+- New generated files: `llms.txt` (plain-text site summary) and an IndexNow key file. `robots.txt` now explicitly allows major AI and search crawlers. `sitemap.xml` has `lastmod` dates.
+- Product icons below the first four rows now load lazily (`loading="lazy"`, `decoding="async"`).
+
 ## Nov 15, 2026 — Business and everyday AI apps section
 
 Added a twelfth comparison chart, [Business and everyday AI apps](https://aitoolchart.net/apps), for marketing and CRM, sales, customer support, writing, and productivity tools used by businesses and by regular people. The new page follows the same recipe as the other sections: product icon in the first column, sourced or labeled-editorial popularity and cost ratings, plain-word filter chips (Business, Personal, Marketing, CRM and sales, Support, Writing), search, sort, and a sticky horizontal scrollbar. A home-page card and nav item (“Apps”) were added. The generated HTML, sitemap, and 404 links were updated by `_build/generate.py`.

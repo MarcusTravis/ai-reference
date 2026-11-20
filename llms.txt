@@ -1,0 +1,33 @@
+# AI Reference Library
+
+> A free, ad-free set of comparison charts of AI tools. No affiliate links. Official-site links go to the vendor.
+
+- Canonical URL: https://aitoolchart.net/
+- Repository: https://github.com/MarcusTravis/ai-reference
+- Support (Ko-fi): https://ko-fi.com/marcustravis
+
+## Sourcing rules
+
+- Numbers are never invented.
+- Captions cite a source and a checked date, or say "Editorial estimate."
+- Popularity is a relative 1–5 judgment against the other products on the same page.
+- Cost is the typical individual paid plan most people buy, on the Free / $ / $$ / $$$ / $$$$ scale.
+- Product data was last checked Nov 15, 2026.
+
+## Pages
+
+- [Home](https://aitoolchart.net/): search every product and open any section.
+- [LLMs and chatbots](https://aitoolchart.net/chatbots): Consumer and API chat assistants, from ChatGPT and Claude to DeepSeek, Grok, and open-weight labs. (12 chatbots.)
+- [Image generation](https://aitoolchart.net/image): Text-to-image tools and models, from Midjourney and ChatGPT Images to Flux, Firefly, and Ideogram. (12 image tools.)
+- [Photo editing and enhancing](https://aitoolchart.net/photo): AI photo editors and enhancers, including face swap, restore, retouching, AI avatars, and background removal, from Reface and Remini to Picsart and Photoroom. (11 photo tools.)
+- [Video generation](https://aitoolchart.net/video): Text-to-video and image-to-video tools, including Runway, Kling, Luma, Sora, and Veo. (10 video tools.)
+- [Voice, TTS, and cloning](https://aitoolchart.net/voice): Text-to-speech, voice cloning, and conversational voice tools, from ElevenLabs to Cartesia and Descript. (10 voice tools.)
+- [Music generation](https://aitoolchart.net/music): AI song and score generators, including Suno, Udio, Stable Audio, and Google Lyria. (8 music tools.)
+- [Coding assistants](https://aitoolchart.net/coding): AI coding editors, plugins, and command-line agents, from Cursor and GitHub Copilot to Claude Code and Cline. (12 coding assistants.)
+- [Transcription and speech-to-text](https://aitoolchart.net/transcription): Speech-to-text APIs and meeting notetakers, including Whisper, Deepgram, Otter, Fireflies, and Fathom. (10 transcription tools.)
+- [AI search](https://aitoolchart.net/search): Answer engines and AI-assisted search, including Perplexity, ChatGPT Search, Google AI Mode, and Grok. (9 search tools.)
+- [Agents and automation](https://aitoolchart.net/agents): Agent products and automation platforms, from ChatGPT agents and Claude computer use to Zapier, Make, and n8n. (10 agent tools.)
+- [Business and everyday AI apps](https://aitoolchart.net/apps): Apps that use AI for practical work: marketing and CRM, sales, customer support, writing, and productivity, for businesses and for regular people, including GoHighLevel, HubSpot, Grammarly, Notion AI, and Canva Magic Studio. (14 apps.)
+- [3D generation](https://aitoolchart.net/gen3d): Image-to-3D and text-to-3D tools, including Meshy, Tripo, Rodin, CSM, Spline, and Hunyuan3D. (8 3D tools.)
+- [Updates](https://aitoolchart.net/updates): plain-English record of what changed.
+- [Sitemap](https://aitoolchart.net/sitemap.xml)

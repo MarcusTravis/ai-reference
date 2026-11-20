@@ -584,3 +584,30 @@ table.chart.chart-wide { min-width: 1960px; }
   color: var(--fg);
   white-space: normal;
 }
+
+/* Intro, related charts, visible FAQ */
+.intro {
+  color: var(--muted);
+  font-size: 15px;
+  max-width: 78ch;
+  margin: 0 0 18px;
+}
+.related, .faq {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 20px 22px;
+  margin-top: 24px;
+}
+.related h2, .faq h2 {
+  font-family: var(--display);
+  font-size: 22px;
+  margin: 0 0 8px;
+  letter-spacing: 0.03em;
+}
+.related ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.related li { color: var(--muted); font-size: 14.5px; }
+.related a { color: var(--cyan); text-decoration: none; }
+.related a:hover { text-decoration: underline; }
+.faq h3 { font-size: 15.5px; font-weight: 600; margin: 16px 0 4px; color: var(--fg); }
+.faq p { color: var(--muted); font-size: 14.5px; margin: 0; }

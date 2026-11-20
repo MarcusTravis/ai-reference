@@ -4,13 +4,17 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 BUILD = ROOT / "_build"
+SEO = json.loads((BUILD / "seo.json").read_text())
 # Intended canonical site URL. Easy to change in one place (canonicals, sitemap, OG).
 # Apex is canonical; www should redirect to the apex (set later in Cloudflare).
 # Suggested Cloudflare Pages project name: aitoolchart
 CANON = "https://aitoolchart.net"
 CHECKED, CHECKED_ISO = "Nov 15, 2026", "2026-11-15"
-UPDATED, UPDATED_ISO = "Nov 15, 2026", "2026-11-15"
-ASSET_V = "20261115a"
+UPDATED, UPDATED_ISO = "Nov 20, 2026", "2026-11-20"
+ASSET_V = "20261120a"
+INDEXNOW_KEY = "6f2c8a14d9e0b375a81c24f6e0d9b217"
+KOFI = "https://ko-fi.com/marcustravis"
+REPO = "https://github.com/MarcusTravis/ai-reference"
 
 def row_id(name):
     return "p-" + _re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
@@ -42,12 +46,116 @@ COMMON_HOW = """
 def e(s):
     return H.escape(s, quote=True)
 
+def ld_dumps(obj):
+    return json.dumps(obj, ensure_ascii=False).replace("</", "<\\/")
+
+def ld_person():
+    return {"@type": "Person", "name": "Marcus Travis", "url": KOFI}
+
+def ld_faq(faqs):
+    return {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {"@type": "Question", "name": f["q"], "acceptedAnswer": {"@type": "Answer", "text": f["a"]}}
+            for f in faqs
+        ],
+    }
+
+def ld_breadcrumb(crumbs):
+    return {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": i, "name": n, "item": u}
+            for i, (n, u) in enumerate(crumbs, 1)
+        ],
+    }
+
+APP_CATEGORY = {
+    "image": "MultimediaApplication", "photo": "MultimediaApplication", "video": "MultimediaApplication",
+    "voice": "MultimediaApplication", "music": "MultimediaApplication", "gen3d": "MultimediaApplication",
+    "coding": "DeveloperApplication", "agents": "BusinessApplication", "apps": "BusinessApplication",
+    "transcription": "BusinessApplication", "chatbots": "UtilitiesApplication", "search": "UtilitiesApplication",
+}
+
+def ld_itemlist(sec, data):
+    items = []
+    for i, d in enumerate(data, 1):
+        app = {"@type": "SoftwareApplication", "name": d["name"],
+               "applicationCategory": APP_CATEGORY.get(sec["slug"], "UtilitiesApplication"),
+               "operatingSystem": "Web"}
+        if d.get("url"):
+            app["url"] = d["url"]
+        items.append({"@type": "ListItem", "position": i, "item": app})
+    return {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": sec["title"],
+        "url": f"{CANON}/{sec['slug']}",
+        "numberOfItems": len(data),
+        "itemListElement": items,
+    }
+
+def ld_home(faqs):
+    site = {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "AI Reference Library",
+        "url": CANON + "/",
+        "description": SEO["home_description"],
+        "inLanguage": "en-US",
+        "publisher": ld_person(),
+    }
+    org = {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "AI Reference Library",
+        "url": CANON + "/",
+        "logo": f"{CANON}/og-image.png",
+        "founder": ld_person(),
+        "sameAs": [KOFI, REPO],
+    }
+    return [site, org, ld_faq(faqs)]
+
+def faq_html(faqs):
+    items = "".join(f"<div><h3>{e(f['q'])}</h3><p>{e(f['a'])}</p></div>" for f in faqs)
+    return f'''  <section class="faq" id="faq">
+    <h2>Common questions</h2>
+    {items}
+  </section>
+'''
+
+def related_html(sec, by_slug):
+    links = []
+    for slug in SEO["related"].get(sec["slug"], []):
+        t = by_slug[slug]
+        links.append(f'<li><a href="{t["file"]}"><strong>{e(t["title"])}</strong></a> <span>{e(t["description"])}</span></li>')
+    if not links:
+        return ""
+    return f'''  <section class="related" id="related">
+    <h2>Related charts</h2>
+    <ul>{"".join(links)}</ul>
+  </section>
+'''
+
+def intro_html(sec, data, n):
+    names = [d["name"] for d in data[:4]]
+    lst = ", ".join(names[:-1]) + ", and " + names[-1]
+    return (f'  <p class="intro">This page is a free, ad-free comparison chart of {n} {e(sec["noun"])}, including {e(lst)}. '
+            f'Popularity and cost ratings include a source caption, or are labeled as an editorial estimate. '
+            f'Product data was last checked {CHECKED}.</p>\n')
+
 FONTS = "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
 OG_ALT = "AI Reference Library: a dark grid and connected nodes"
 
-def head(title, description, path):
+def head(title, description, path, json_ld=None):
     url = CANON + path
     typ = "website" if path == "/" else "article"
+    ld = "".join(
+        '<script type="application/ld+json">' + ld_dumps(b) + "</script>\n"
+        for b in (json_ld or [])
+    )
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -69,6 +177,8 @@ def head(title, description, path):
 <meta name="twitter:title" content="{e(title)}">
 <meta name="twitter:description" content="{e(description)}">
 <meta name="twitter:image" content="{CANON}/og-image.png">
+<meta name="twitter:image:alt" content="{e(OG_ALT)}">
+<link rel="alternate" type="text/plain" title="LLM summary" href="{CANON}/llms.txt">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -76,7 +186,7 @@ def head(title, description, path):
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="{FONTS}">
 <link rel="stylesheet" href="theme.css?v={ASSET_V}">
-</head>
+{ld}</head>
 """
 
 def nav(current):
@@ -164,7 +274,7 @@ COST_HOW = """        <li>Cost is rated on the typical individual paid plan most
 
 VISUAL_HOW = "The first column is meant to look like the product’s app or site icon. Official vendor or App Store app icons are used when we could find one this session. If not, the tile is a generated initials icon in the same rounded-square style."
 
-def write_catalog(sec):
+def write_catalog(sec, by_slug):
     data = json.loads((BUILD / sec["json"]).read_text())
     base_keys = ("name","maker","knownFor","tags","price","pop","popCaption","cost","costCaption","learn","pro","con","url","icon","iconOfficial")
     extra_cols = sec.get("extraCols") or []
@@ -174,10 +284,14 @@ def write_catalog(sec):
     table_class = "chart chart-wide" if extra_cols else "chart"
     extra_ths = "".join(f'\n          <th>{e(c["label"])}</th>' for c in extra_cols)
     extras_js = json.dumps(extra_keys)
-    html = head(sec["title"] + " · AI Reference Library", sec["description"], "/" + sec["slug"])
+    faqs = SEO["faqs"][sec["slug"]]
+    url = f"{CANON}/{sec['slug']}"
+    html = head(f"{sec['title']} {SEO['section_title_suffix']}", sec["description"], "/" + sec["slug"],
+                json_ld=[ld_breadcrumb([("Home", CANON + "/"), (sec["title"], url)]), ld_itemlist(sec, data), ld_faq(faqs)])
     html += "<body>\n" + wrap(nav(sec["file"]))
     html += '<div class="wrap chart-wrap" id="main">\n'
     html += hero("Independent AI tools guide", sec["title"], sec["lede"])
+    html += intro_html(sec, data, len(data))
     html += f"""  <div id="catalog">
   <div class="toolbar">
     <div class="chips" role="group" aria-label="Filter">{chips(data)}</div>
@@ -211,7 +325,7 @@ def write_catalog(sec):
     </table>
   </div>
   </div>
-  <div class="notes">
+{related_html(sec, by_slug)}{faq_html(faqs)}  <div class="notes">
     <section>
       <h2>How the ratings work</h2>
       <ul>{COMMON_HOW}<li>{e(sec["relative"])}</li></ul>
@@ -301,11 +415,7 @@ def write_home(counts, sections):
         f'<a class="card" href="{href}"><span class="cnt">{cnt}</span><span class="nm">{name}</span><span class="ds">{ds}</span><span class="go">Open guide →</span></a>'
         for href, cnt, name, ds in cards
     )
-    html = head(
-        "AI Reference Library",
-        "Free, ad-free guide to AI tools: chatbots, image generation, photo editing, video, voice, music, coding assistants, transcription, AI search, agents, business and everyday apps, and 3D, with cited ratings.",
-        "/",
-    )
+    html = head(SEO["home_title"], SEO["home_description"], "/", json_ld=ld_home(SEO["home_faqs"]))
     html += "<body>\n" + wrap(nav("index.html"))
     html += '<div class="wrap chart-wrap" id="main">\n'
     html += hero("Independent AI tools guide", "AI Reference Library",
@@ -321,7 +431,7 @@ def write_home(counts, sections):
     <h2>Start here</h2>
     <div class="grid">{grid}</div>
   </section>
-  <div class="notes">
+{faq_html(SEO["home_faqs"])}  <div class="notes">
     <section>
       <h2>How to use this site</h2>
       <p>Search above to jump straight to any product’s row, or open a section. Each section opens as a compact, scrollable comparison chart — one row per product — that you can filter, search, and sort. Stars are a 1–5 popularity judgment with a source caption. Cost uses a Free / $ / $$ / $$$ / $$$$ scale with a source caption, rated on the typical individual paid plan most people buy. “Best for” labels are editorial. Official-site links are not affiliate links.</p>
@@ -346,11 +456,21 @@ def write_home(counts, sections):
     print("wrote index.html")
 
 def write_updates():
-    html = head("Updates · AI Reference Library", "What changed on the AI Reference Library, in plain English.", "/updates")
+    desc = "What changed on the AI Reference Library, in plain English."
+    html = head("Updates · AI Reference Library", desc, "/updates", json_ld=[
+        {"@context": "https://schema.org", "@type": "WebPage", "name": "Updates", "url": CANON + "/updates",
+         "description": desc, "inLanguage": "en-US", "isPartOf": {"@type": "WebSite", "name": "AI Reference Library", "url": CANON + "/"}},
+        ld_breadcrumb([("Home", CANON + "/"), ("Updates", CANON + "/updates")]),
+    ])
     html += "<body>\n" + wrap(nav("updates.html"))
     html += '<div class="wrap chart-wrap" id="main">\n'
     html += hero("Changelog", "Updates", "A short, plain-English record of what changed on this site.", checked=False)
     html += f"""  <article>
+    <div class="log">
+      <h3>Search and AI-crawler updates</h3>
+      <p><time datetime="2026-11-20">Nov 20, 2026</time></p>
+      <p>Added unique comparison-chart titles, a short intro and a visible FAQ on the home page and on every section, structured data (WebSite, ItemList of SoftwareApplication, BreadcrumbList, FAQPage), an /llms.txt summary, an expanded robots.txt that explicitly allows major AI and search crawlers, lastmod dates in the sitemap, IndexNow, and lazy-loading for below-fold product icons. Product ratings were not changed in this pass; data was last checked November 15, 2026.</p>
+    </div>
     <div class="log">
       <h3>New section: Business and everyday AI apps</h3>
       <p><time datetime="2026-11-15">Nov 15, 2026</time></p>
@@ -438,14 +558,50 @@ def write_404():
     (ROOT / "404.html").write_text(html)
     print("wrote 404.html")
 
-def write_meta(stats):
+BOTS = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "PerplexityBot", "Google-Extended", "Bingbot", "*"]
+
+def write_llms(stats, sections):
+    L = [
+        "# AI Reference Library",
+        "",
+        "> A free, ad-free set of comparison charts of AI tools. No affiliate links. Official-site links go to the vendor.",
+        "",
+        f"- Canonical URL: {CANON}/",
+        f"- Repository: {REPO}",
+        f"- Support (Ko-fi): {KOFI}",
+        "",
+        "## Sourcing rules",
+        "",
+        "- Numbers are never invented.",
+        f"- Captions cite a source and a checked date, or say \"Editorial estimate.\"",
+        "- Popularity is a relative 1–5 judgment against the other products on the same page.",
+        "- Cost is the typical individual paid plan most people buy, on the Free / $ / $$ / $$$ / $$$$ scale.",
+        f"- Product data was last checked {CHECKED}.",
+        "",
+        "## Pages",
+        "",
+        f"- [Home]({CANON}/): search every product and open any section.",
+    ]
+    for sec in sections:
+        n = stats[sec["slug"]][0]
+        L.append(f"- [{sec['title']}]({CANON}/{sec['slug']}): {sec['description']} ({n} {sec['noun']}.)")
+    L += [
+        f"- [Updates]({CANON}/updates): plain-English record of what changed.",
+        f"- [Sitemap]({CANON}/sitemap.xml)",
+        "",
+    ]
+    (ROOT / "llms.txt").write_text("\n".join(L))
+
+def write_meta(stats, sections):
     pages = ["/", "/chatbots", "/image", "/photo", "/video", "/voice", "/music", "/coding", "/transcription", "/search", "/agents", "/apps", "/gen3d", "/updates"]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for p in pages:
-        sm.append(f"  <url><loc>{CANON}{p}</loc></url>")
+        sm.append(f"  <url><loc>{CANON}{p}</loc><lastmod>{UPDATED_ISO}</lastmod></url>")
     sm.append("</urlset>")
     (ROOT / "sitemap.xml").write_text("\n".join(sm) + "\n")
-    (ROOT / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {CANON}/sitemap.xml\n")
+    (ROOT / "robots.txt").write_text("".join(f"User-agent: {b}\nAllow: /\n\n" for b in BOTS) + f"Sitemap: {CANON}/sitemap.xml\n")
+    write_llms(stats, sections)
+    (ROOT / f"{INDEXNOW_KEY}.txt").write_text(INDEXNOW_KEY + "\n")
     (ROOT / "_headers").write_text(
         f"# Apex {CANON.removeprefix('https://')} is the canonical address.\n"
         f"# www should redirect to the apex (set later in Cloudflare DNS / Pages).\n"
@@ -481,6 +637,8 @@ python3 _build/generate.py
 
 Comparison-chart rows are driven by a `DATA` array on each section page, generated from `_build/<section>.json`. After changing facts, also update `CHANGELOG.md` and add a short note on `updates.html`.
 
+Search and AI-crawler files (`robots.txt`, `sitemap.xml`, `llms.txt`, and the IndexNow key file) are also written by `_build/generate.py`; SEO copy such as FAQs lives in `_build/seo.json`.
+
 Visitor stats (optional, after deploy): Cloudflare Web Analytics, from the Pages project Metrics page.
 
 ## Sources
@@ -492,12 +650,13 @@ The November 2026 research notes and source list live in `CHANGELOG.md`.
 def main():
     sections = json.loads((BUILD / "sections.json").read_text())
     stats = {}
+    by_slug = {x["slug"]: x for x in sections}
     for sec in sections:
-        stats[sec["slug"]] = write_catalog(sec)
+        stats[sec["slug"]] = write_catalog(sec, by_slug)
     write_home(stats, sections)
     write_updates()
     write_404()
-    write_meta(stats)
+    write_meta(stats, sections)
     print("DONE", stats)
 
 if __name__ == "__main__":

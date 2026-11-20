@@ -1,0 +1,294 @@
+{
+  "home_title": "AI Reference Library — free AI tools comparison charts",
+  "home_description": "Free, ad-free comparison charts of 126 AI tools across 12 sections, with cited popularity and cost ratings. No ads and no affiliate links.",
+  "home_faqs": [
+    {
+      "q": "What is the AI Reference Library?",
+      "a": "It is a free, ad-free set of comparison charts of 126 AI tools in 12 sections: chatbots, image generation, photo editing and enhancing, video, voice, music, coding assistants, transcription, AI search, agents and automation, business and everyday AI apps, and 3D generation. Each section is a compact chart you can filter, search, and sort. Official-site links go to the vendor and are not affiliate links."
+    },
+    {
+      "q": "How are the popularity ratings sourced?",
+      "a": "Popularity is a 1–5 judgment (halves allowed) of how commonly a product shows up in recent traffic reports, app ranks, or usage leaderboards, relative to the other products on the same page — not a computed formula. Captions name the source and a checked date. This pass used Similarweb website-visit estimates for October 2026 (often as published by SeekTool), some Semrush estimates, GitHub star counts, OpenRouter token rankings, and app-store rating counts. Website-visit figures are visits, not app sessions or unique people. If there was no usable source, the caption says “Editorial estimate.” Product data was last checked November 15, 2026."
+    },
+    {
+      "q": "Is the site free, and are there ads or affiliate links?",
+      "a": "Yes. The site is free and ad-free, and it has no affiliate links. Official-site buttons go straight to the vendor. Stars are not paid placement. If the charts help you, the footer has an optional Ko-fi link."
+    },
+    {
+      "q": "How is cost rated?",
+      "a": "Cost uses a five-step scale: Free, $, $$, $$$, and $$$$. It is rated on the typical individual paid plan most people buy, per month, when a published price was found: the plan the vendor marks as popular or most popular when they mark one, otherwise the ordinary individual paid plan (not the cheapest limited tier, and not an ultra or teams tier). The bands are: Free — no individual paid plan is required for the core product; $ — under $15 a month; $$ — $15–29 a month; $$$ — $30–99 a month; $$$$ — $100 or more a month, or quote-only with no public individual plan found. If the product is mainly a usage-based API, or no public individual price turned up, the caption says so and the band is an editorial estimate — never an invented dollar amount. Always confirm current pricing with the vendor. Prices were checked in November 2026."
+    }
+  ],
+  "related": {
+    "chatbots": [
+      "search",
+      "agents",
+      "coding"
+    ],
+    "image": [
+      "photo",
+      "video",
+      "gen3d"
+    ],
+    "photo": [
+      "image",
+      "apps"
+    ],
+    "video": [
+      "image",
+      "voice"
+    ],
+    "voice": [
+      "transcription",
+      "music",
+      "video"
+    ],
+    "music": [
+      "voice"
+    ],
+    "coding": [
+      "agents",
+      "chatbots"
+    ],
+    "transcription": [
+      "voice",
+      "agents"
+    ],
+    "search": [
+      "chatbots",
+      "agents"
+    ],
+    "agents": [
+      "apps",
+      "coding",
+      "chatbots"
+    ],
+    "apps": [
+      "agents",
+      "photo"
+    ],
+    "gen3d": [
+      "image",
+      "video"
+    ]
+  },
+  "section_title_suffix": "comparison chart · AI Reference Library",
+  "faqs": {
+    "chatbots": [
+      {
+        "q": "Which chatbots show the most website traffic in this chart?",
+        "a": "In Similarweb’s October 2026 estimates of visits to seven generative AI assistant websites, ChatGPT had 55.7%, Gemini 24.2%, Claude 11.5%, DeepSeek 3.4%, Grok 2.2%, Microsoft Copilot 1.1%, and Perplexity 0.8%. Those figures are website visits, not app sessions or people, and Perplexity itself is listed on the AI search chart rather than this one. Character.AI, which is on this chart but not in that seven-site set, had 154.2 million web visits in October 2026 (Similarweb estimates via SeekTool). Meta AI had 43.9 million and Qwen 35.1 million on the same SeekTool set."
+      },
+      {
+        "q": "What do typical individual ChatGPT, Claude, Gemini, and Grok plans cost?",
+        "a": "As of the November 2026 check: ChatGPT Plus is $20 a month (OpenAI Help), Claude Pro is $20 a month, or $17 a month billed annually (claude.com/pricing), Google AI Pro is $19.99 a month, and Grok’s most popular plan is Premium at $30 a month (x.ai/pricing), on the same X Subscription ladder as Cursor. Microsoft 365 Premium is $19.99 a month, and Mistral Le Chat Pro is $14.99 a month. Always confirm current pricing with the vendor."
+      },
+      {
+        "q": "Which chatbots on this page are presented as free?",
+        "a": "The consumer chat apps for DeepSeek, Meta AI, Qwen, Kimi, and Z.ai (GLM) are presented as free, according to the vendor pages checked in November 2026. Character.AI’s paid plan is an editorial estimate, because no public individual price was captured this session."
+      },
+      {
+        "q": "Are the popularity stars a universal ranking?",
+        "a": "No. Stars on this page are relative to the other assistants here, not a universal score. Website-visit shares under-count tools that live mainly inside an app or an office suite, which is why some rows also cite a separate Similarweb or SeekTool visit count, or an OpenRouter token ranking, instead of only the seven-site share."
+      }
+    ],
+    "image": [
+      {
+        "q": "Which image generators had the most website visits in this chart?",
+        "a": "Among rows with a product-site visit figure, SeaArt had 15.7 million web visits in October 2026, Midjourney 8.6 million, Leonardo 7.6 million, Ideogram 1.9 million, Microsoft Designer 1.64 million, and Recraft 1.54 million (Similarweb estimates via SeekTool). ChatGPT Images, Gemini Images, and Grok Imagine are rated with their parent chat apps rather than a separate image-site count. Adobe Firefly and DreamStudio popularity scores are editorial estimates."
+      },
+      {
+        "q": "What does Midjourney’s typical plan cost?",
+        "a": "Midjourney’s typical plan in this chart is Standard at $30 a month, or $24 a month billed yearly (midjourney.com/pricing, checked November 2026). The chart rates Standard, the plan most people buy; Basic is $10. ChatGPT Images is rated on ChatGPT Plus at $20 a month, Gemini Images on Google AI Pro at $19.99 a month, Grok Imagine on Premium at $30 a month, and Microsoft Designer on Microsoft 365 Premium at $19.99 a month. Several other rows have editorial cost bands because no public individual price was captured this session."
+      },
+      {
+        "q": "Is this the page for photo editors like Reface or Remini?",
+        "a": "No. This chart is for text-to-image generation. Photo editors and enhancers, including Reface, Remini, Picsart, and Photoroom, are on the Photo editing and enhancing chart. Picsart and Fotor can also generate images, but they are listed there rather than here. Adobe Firefly and Photoshop stay on this page."
+      },
+      {
+        "q": "How is Flux’s popularity measured here?",
+        "a": "Flux’s caption cites 26,059 GitHub stars for black-forest-labs/flux, checked in November 2026, not a website-visit figure. That is a measure of the open model repository, not consumer app sessions."
+      }
+    ],
+    "photo": [
+      {
+        "q": "Are Reface and Remini on this chart?",
+        "a": "Yes. Reface and Remini are both on this Photo editing and enhancing chart, along with Picsart, Photoroom, FaceApp, Facetune, Fotor, Lensa, Topaz Photo, Let’s Enhance, and Magnific. Reface had 260,400 web visits in October 2026 (Similarweb estimates via SeekTool); the vendor cites 474,468 Apple App Store reviews, and Google Play structured data showed 1.8 million ratings. Remini had 388,800 web visits in October 2026 and 360,000 US App Store ratings at a 4.6 average, checked November 14, 2026."
+      },
+      {
+        "q": "Which photo tools had the most website visits or app ratings here?",
+        "a": "Photoroom had 18.2 million web visits in October 2026 and 232,000 US App Store ratings; its official App Store listing says it is trusted by over 300 million users (a vendor claim). Picsart had 16.5 million visits and 1.2 million US App Store ratings, ranked #12 in Photo & Video. FaceApp is rated mainly on app-store use: 1.8 million US App Store ratings at a 4.7 average, because website visits under-count this mobile-first app. Magnific’s popularity score is an editorial estimate; the old magnific.ai visit figure was not used as a clean product score."
+      },
+      {
+        "q": "What do typical Reface, Picsart, and Photoroom plans cost?",
+        "a": "As of the November 2026 check: Picsart Pro is $15 a month, or $10.50 a month billed yearly, labeled most popular. Photoroom Pro is $7.50 a month billed yearly, labeled most popular. Reface’s web Basic plan is $7.58 a month billed annually as $90.99; Premium is $9.99 a month billed annually as $119.99 (reface.ai/unboring). Mobile app prices may differ. FaceApp, Remini, Fotor, and Lensa have editorial cost bands; FaceApp and Lensa publish no public price list, Remini’s App Store offers vary, and Fotor’s pricing page did not expose a dollar figure as text this session."
+      },
+      {
+        "q": "How is this page different from the Image generation chart?",
+        "a": "This page covers tools people use to edit, enhance, restore, retouch, and face-swap photos, and to make AI avatars. The Image generation chart covers text-to-image tools such as Midjourney and Flux. Picsart and Fotor can also generate images, but they are listed here. Adobe Firefly and Photoshop stay on the Image generation page."
+      }
+    ],
+    "video": [
+      {
+        "q": "Which AI video generators had the most website visits in this chart?",
+        "a": "Among rows with a cited visit figure, Kling had 16.1 million web visits in October 2026, HeyGen 9.7 million, Runway 7.5 million, Vidu 4.0 million, Luma Dream Machine 2.25 million, and Pika 1.06 million (Similarweb estimates via SeekTool). Hailuo had 5.9 million visits in September 2026 (Semrush estimates via Tako’s a16z Top 100 table). Google Veo, Sora, and Adobe Firefly Video popularity scores are editorial estimates, because a clean product-level usage figure was not used for those rows."
+      },
+      {
+        "q": "What do Runway, Sora, and Veo typical plans cost?",
+        "a": "Runway’s typical plan in this chart is Standard at $15 a month, or $12 a month billed annually (runwayml.com/pricing, checked November 2026). Sora access is rated on ChatGPT Plus at $20 a month, and Google Veo access is rated on Google AI Pro at $19.99 a month. Kling, Luma Dream Machine, Pika, Hailuo, Adobe Firefly Video, HeyGen, and Vidu have editorial cost bands, because no public individual price was captured this session. No dollar amounts were invented for those rows."
+      },
+      {
+        "q": "Are the popularity scores a single industry ranking?",
+        "a": "No. Scores are relative to the other video tools on this page. Public, product-level usage rankings for video generators are thin, and some well-known tools (Sora, Veo) are labeled as editorial estimates for popularity."
+      },
+      {
+        "q": "Does this chart include talking-head or avatar video tools?",
+        "a": "HeyGen is on this chart. The other rows are mainly text-to-video or image-to-video tools such as Runway, Kling, Luma Dream Machine, Pika, Sora, Google Veo, Hailuo, Vidu, and Adobe Firefly Video."
+      }
+    ],
+    "voice": [
+      {
+        "q": "Which voice or text-to-speech tool had the most website visits here?",
+        "a": "ElevenLabs had 42.4 million web visits in October 2026 (Similarweb estimates via SeekTool), the highest cited visit count on this page. Speechify had 5.46 million, Descript 3.27 million, and Cartesia 1.78 million on the same source. OpenAI TTS, PlayAI, Murf, and Google Cloud TTS popularity scores are editorial estimates."
+      },
+      {
+        "q": "What does ElevenLabs’s typical plan cost?",
+        "a": "ElevenLabs’s typical plan in this chart is Creator at $22 a month, or $11 for the first month, labeled popular (elevenlabs.io/pricing, checked November 2026). Starter is $6 a month after a $1 first month. OpenAI TTS is rated on ChatGPT Plus at $20 a month for ChatGPT voice features; API TTS is usage-based and billed separately. Most other voice rows have editorial cost bands, because no flat public individual price was captured, or official pricing is usage-based."
+      },
+      {
+        "q": "Does this page cover meeting transcription?",
+        "a": "Only in a limited way. Descript appears here as a voice and editing tool, and it also appears on the Transcription and speech-to-text chart. Meeting notetakers such as Otter, Fireflies, and Fathom are on that transcription chart."
+      },
+      {
+        "q": "Is music generation on this page?",
+        "a": "No. Song and score generators such as Suno and Udio, and Eleven Music, are on the Music generation chart. Eleven Music is sold as part of ElevenLabs paid plans, but it is listed there rather than here."
+      }
+    ],
+    "music": [
+      {
+        "q": "Which AI music tool had the most website visits in this chart?",
+        "a": "Suno had 78.1 million web visits in October 2026 (Similarweb estimates via SeekTool), far ahead of the other sourced rows: Udio 1.06 million, Soundraw 205,000, Beatoven 156,000, and AIVA 113,000. Stable Audio is measured by 3,911 GitHub stars for Stability-AI/stable-audio-tools, not visits. Google Lyria / MusicFX and Eleven Music popularity scores are editorial estimates."
+      },
+      {
+        "q": "What does Suno’s typical plan cost?",
+        "a": "Suno’s typical plan in this chart is Pro at $10 a month, or $8 a month billed yearly, labeled most popular (suno.com/pricing, checked November 2026). Google Lyria / MusicFX is rated on Google AI Plus at $4.99 a month. Eleven Music is rated on ElevenLabs Creator at $22 a month, because music is included in ElevenLabs paid plans. Udio, Stable Audio, AIVA, Soundraw, and Beatoven have editorial cost bands; no public individual dollar figure was captured for those rows this session."
+      },
+      {
+        "q": "Is Eleven Music the same as the ElevenLabs voice products?",
+        "a": "Eleven Music is listed on this music chart. Voice, TTS, and cloning products from ElevenLabs are on the Voice, TTS, and cloning chart. The Creator plan price cited here is the same ElevenLabs plan used on that page."
+      },
+      {
+        "q": "Why are some popularity scores editorial estimates?",
+        "a": "There is no single public usage league table for music generators in this research pass. If a visit count, GitHub star count, or other usable source was found, the caption cites it. Otherwise the caption says “Editorial estimate.”"
+      }
+    ],
+    "coding": [
+      {
+        "q": "Which coding assistants had the most cited website traffic or GitHub stars?",
+        "a": "Cursor had 23.3 million web visits in October 2026 (Similarweb estimates via SeekTool), the highest visit figure on this page. Windsurf had 2.55 million. Among open tools, Cline had 71,633 GitHub stars, Aider 50,118 stars (and 280,000 visits to aider.chat in October 2026), and Continue 36,481 stars, checked in November 2026. GitHub Copilot, Claude Code, OpenAI Codex, Amazon Q Developer, and JetBrains AI popularity scores are editorial estimates, because there is no one public usage table for those commercial tools."
+      },
+      {
+        "q": "What do Cursor, GitHub Copilot, and Claude Code typical plans cost?",
+        "a": "Cursor’s typical plan is Premium at $30 a month, labeled most popular (cursor.com/pricing, checked November 2026), on the same X Subscription ladder and usage pool as Grok. GitHub Copilot Pro is $10 a month. Claude Code is included with Claude Pro at $20 a month. OpenAI Codex is rated on ChatGPT Plus at $20 a month, Windsurf Pro is $20 a month, and Gemini Code Assist is rated on Google AI Pro at $19.99 a month. Cline, Aider, and Continue are free open-source tools; models are billed separately."
+      },
+      {
+        "q": "Are the open-source coding tools really free?",
+        "a": "The core products for Cline, Aider, and Continue are free open-source tools or extensions, according to the vendor and GitHub pages checked in November 2026. The models they call are billed separately. That is why their cost band is Free, with a caption that says models are billed separately."
+      },
+      {
+        "q": "Why is Cursor more expensive than Copilot in this chart?",
+        "a": "Cost bands follow the typical individual paid plan most people buy. Cursor is rated on Premium at $30 a month ($$$), and GitHub Copilot on Copilot Pro at $10 a month ($). Those are the published prices checked in November 2026, not a judgment of which tool is a better deal."
+      }
+    ],
+    "transcription": [
+      {
+        "q": "Which transcription tools had the most cited use in this chart?",
+        "a": "OpenAI Whisper is rated on the open-source repo, with 112,711 GitHub stars (openai/whisper), checked in November 2026. Among meeting and service sites, Otter had 7.36 million web visits in October 2026, Fireflies 4.41 million, Descript 3.27 million, Notta 2.59 million, and Rev 1.52 million (Similarweb estimates via SeekTool)."
+      },
+      {
+        "q": "What do Otter and Whisper cost in this chart?",
+        "a": "Otter’s typical plan is Pro at $16.99 per user per month, or $8.33 per user per month billed annually (otter.ai/pricing, checked November 2026). The open-source Whisper models are free to run locally; hosted API use is billed separately. Most other rows have editorial cost bands, because many are usage-based APIs or no public individual price was captured this session."
+      },
+      {
+        "q": "Does this page mix APIs and meeting notetakers?",
+        "a": "Yes. It includes developer speech-to-text APIs and meeting apps with monthly seats. Scores are relative to the other transcription tools on this page, and API cost bands are editorial estimates when there is no fair individual monthly plan. Whisper’s star count is for the open model, which is not the same as ChatGPT’s built-in voice features."
+      },
+      {
+        "q": "Where is Descript listed?",
+        "a": "Descript appears on this transcription chart and also on the Voice, TTS, and cloning chart, because it is used for both editing voice and turning speech into text. The October 2026 visit figure cited on both rows is 3.27 million for the Descript site."
+      }
+    ],
+    "search": [
+      {
+        "q": "Which AI search tools had the most cited website traffic?",
+        "a": "Perplexity had 88.3 million web visits in October 2026 (Similarweb estimates via SeekTool), and it also had 0.8% of visits in Similarweb’s seven-assistant website-visit set that month. ChatGPT Search is rated with ChatGPT, first in that seven-assistant set; Microsoft Copilot (search) with Copilot at 1.1%; and Grok (search) with Grok at 2.2%. Exa had 1.06 million visits, You.com 948,000, and Phind 9,600. Google AI Mode and Brave Search / Leo popularity scores are editorial estimates. Google AI Mode lives inside Search and is not measured by those chatbot-site shares."
+      },
+      {
+        "q": "What do typical ChatGPT Search, Copilot, Grok, and Google AI plans cost?",
+        "a": "ChatGPT Search is rated on ChatGPT Plus at $20 a month, Microsoft Copilot (search) on Microsoft 365 Premium at $19.99 a month, and Grok (search) on Premium at $30 a month, labeled most popular (checked November 2026). Google AI Mode is rated on Google AI Plus at $4.99 a month. Perplexity, You.com, Phind, Exa, and Brave Search / Leo have editorial cost bands, because no public individual price was captured this session."
+      },
+      {
+        "q": "Why do some of these tools also appear as chatbots?",
+        "a": "ChatGPT, Microsoft Copilot, and Grok appear on the chatbots chart as assistants, and again here for their search or answer-engine use. The stars on this page are about search use, not the parent chat app as a whole."
+      },
+      {
+        "q": "Is this an answer-engine ranking I should buy from?",
+        "a": "No. It is a starting comparison of answer engines and AI-assisted search, with source captions or editorial-estimate labels. Confirm current pricing and features with the vendor."
+      }
+    ],
+    "agents": [
+      {
+        "q": "Which agent or automation tools had the most cited website traffic or stars?",
+        "a": "Among rows with a cited figure, Manus had 19.2 million web visits in October 2026, Google Antigravity 16.1 million, Make 5.16 million, Zapier 5.07 million, and n8n 4.52 million, plus 210,503 GitHub stars for n8n-io/n8n (Similarweb estimates via SeekTool, and GitHub, checked November 2026). ChatGPT Agent, Claude Computer Use, and Microsoft Copilot Studio popularity scores are editorial estimates, because there is no shared public usage table for those consumer or office agents."
+      },
+      {
+        "q": "What do ChatGPT Agent, Claude computer use, Zapier, and n8n typical plans cost?",
+        "a": "ChatGPT Agent features are rated on ChatGPT Plus at $20 a month. Claude computer use is included with Claude Pro at $20 a month. Zapier’s typical plan is Professional from $19.99 a month. n8n Cloud Starter is €20 a month billed annually (n8n.io/pricing, checked November 2026). Google Antigravity is rated on Google AI Pro at $19.99 a month. Make, Lindy, Manus, Microsoft Copilot Studio, and Relevance AI have editorial cost bands."
+      },
+      {
+        "q": "Is Zapier also on the business apps chart?",
+        "a": "No. Zapier is on this Agents and automation page and is not repeated on the Business and everyday AI apps chart. That apps chart covers tools such as GoHighLevel, HubSpot, Grammarly, and Notion AI."
+      },
+      {
+        "q": "What kinds of products are mixed on this page?",
+        "a": "This category mixes consumer agents, office copilots, and workflow platforms. Scores are relative to the other agent and automation tools on this page, not a single industry league table."
+      }
+    ],
+    "apps": [
+      {
+        "q": "Is GoHighLevel on this chart, and how is it rated?",
+        "a": "Yes. GoHighLevel (HighLevel) is on this Business and everyday AI apps chart. Its popularity caption cites 14.2 million web visits to gohighlevel.com in October 2026 (Semrush, last updated November 11, 2026), for the HighLevel platform as a whole; a SeekTool Similarweb figure was not found for that domain this session. The typical entry plan in this chart is Starter at $97 a month, or $970 a year, for one business or a few clients (gohighlevel.com/pricing, checked November 2026). Unlimited is $297 a month and Pro is $497 a month. Usage charges apply for phone, SMS, email, and some AI features. This is business pricing."
+      },
+      {
+        "q": "Which business and everyday apps had the most website visits here?",
+        "a": "Visit figures are for the product or company site, and for large platforms they cover the whole site, not only the AI feature. In October 2026, Similarweb estimates via SeekTool included Canva 954.6 million (canva.com), Notion 175.3 million, Salesforce 111.9 million (company site), Zendesk 61.0 million, Grammarly 58.9 million, HubSpot 44.1 million, QuillBot 36.6 million, ClickUp 33.9 million, Gamma 20.8 million, Superhuman 6.51 million, Intercom 4.47 million, Jasper 373,000, and Copy.ai 344,300. All 14 popularity ratings on this page have a source."
+      },
+      {
+        "q": "What do Grammarly, Notion AI, and Jasper typical plans cost?",
+        "a": "Grammarly Pro is $12 per member per month billed annually ($144 a year), or $30 per member per month billed monthly. Notion Business is $20 per member per month, labeled Recommended, and includes Notion Agent; Plus is $10 per member per month and includes only a trial of Notion AI. Jasper Pro is $59 a month billed yearly, or $69 a month billed monthly; Business is custom pricing. Gamma’s cost band is an editorial estimate, because no public dollar figure was captured from its pricing page this session. Confirm current prices with the vendor."
+      },
+      {
+        "q": "Who is this section for?",
+        "a": "It covers apps that put AI models to work on everyday jobs — marketing and CRM, sales, support, writing, and productivity — for businesses and for regular people. Filter chips include Business, Personal, Marketing, CRM and sales, Support, and Writing. Zapier stays on the Agents and automation page. Canva Magic Studio is listed here and was not already on the Image generation or Photo editing pages."
+      }
+    ],
+    "gen3d": [
+      {
+        "q": "Which 3D generation tools had the most website visits in this chart?",
+        "a": "Tripo had 25.2 million web visits in October 2026, Meshy 19.5 million, and Rodin 10.8 million (the Rodin figure is for hyper3d.ai, Rodin’s product site), according to Similarweb estimates via SeekTool. 3D AI Studio had 616,000 visits and Spline AI 588,000. Hunyuan3D is measured by 15,412 GitHub stars for Tencent-Hunyuan/Hunyuan3D-2. CSM and Luma Genie popularity scores are editorial estimates."
+      },
+      {
+        "q": "What do these 3D tools cost?",
+        "a": "The published Hunyuan3D models are free to run (github.com/Tencent-Hunyuan/Hunyuan3D-2, checked November 2026); hosted or API use may be billed separately. The other seven rows have editorial cost bands in the $$ range, because no public individual price was captured this session. No dollar amounts were invented for those rows. Confirm current pricing with the vendor."
+      },
+      {
+        "q": "How is this different from the Image generation chart?",
+        "a": "This page is for tools that turn an image or a prompt into a 3D asset, including Meshy, Tripo, Rodin, CSM, Spline AI, Hunyuan3D, Luma Genie, and 3D AI Studio. Still-image generators such as Midjourney and Flux are on the Image generation chart."
+      },
+      {
+        "q": "Why are several popularity scores editorial estimates?",
+        "a": "The 3D generation field is smaller and faster-moving than chat or image tools. Most rows with a usable visit count or GitHub star count cite that source. CSM and Luma Genie stay labeled as editorial estimates because no usable public figure was found for those products this session."
+      }
+    ]
+  }
+}

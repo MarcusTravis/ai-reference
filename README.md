@@ -24,6 +24,8 @@ python3 _build/generate.py
 
 Comparison-chart rows are driven by a `DATA` array on each section page, generated from `_build/<section>.json`. After changing facts, also update `CHANGELOG.md` and add a short note on `updates.html`.
 
+Search and AI-crawler files (`robots.txt`, `sitemap.xml`, `llms.txt`, and the IndexNow key file) are also written by `_build/generate.py`; SEO copy such as FAQs lives in `_build/seo.json`.
+
 Visitor stats (optional, after deploy): Cloudflare Web Analytics, from the Pages project Metrics page.
 
 ## Sources
